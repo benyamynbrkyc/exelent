@@ -14,6 +14,7 @@
     />
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/animate.css" />
 
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -30,8 +31,72 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<style>
+  #toTop{
+  padding-left: 7px;
+  padding-right: 7px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	cursor: pointer;
+  display: none;
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  /* color: #2f89fc; */
+  color: black;
+}
+#toTop:hover {
+  transition-duration: 0.3s;
+  border-color: #2f89fc;
+  color: #2f89fc;
+}
+</style>
+<script>
+  $(document).ready(function(){
+      $('body').append('<div id="toTop" class="btn-info"><span class="glyphicon glyphicon-chevron-up"></span></div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		}); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+</script>
   </head>
   <body>
+
+    <div id="btnTop" class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;display: none; z-index: 10000;">
+      <a href="#topSection" class="btn-floating btn-large red">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+    <script>
+      $(function() {
+  
+  var $btn = $('#btnTop');
+  var $home = $('#topSection');
+  var startpoint = $home.scrollTop() + $home.height();
+  
+  $(window).on('scroll', function() {
+    if($(window).scrollTop() > startpoint) {
+      $btn.show();
+    } else {
+      $btn.hide();
+    }
+  });
+});
+    </script>
+
     <div class="KW_progressContainer">
       <div class="KW_progressBar"></div>
     </div>
@@ -560,6 +625,8 @@
         </div>
       </div>
     </div>
+
+    
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
