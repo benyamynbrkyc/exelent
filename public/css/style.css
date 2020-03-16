@@ -9644,7 +9644,7 @@ h5,
   bottom: 0;
   right: 0;
   content: '';
-  background: rgba(18, 18, 18, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 768px) {
   #colorlib-main-nav .colorlib-table .img {
@@ -9655,6 +9655,7 @@ h5,
   display: table-cell;
   vertical-align: middle;
   position: relative;
+  background: whitesmoke;
 }
 #colorlib-main-nav .colorlib-nav-toggle {
   position: absolute;
@@ -9695,7 +9696,7 @@ h5,
   content: '';
   width: 40px;
   height: 2px;
-  background: #fff;
+  background: #2f89fc;
   position: absolute;
   left: 0;
 }
@@ -9709,7 +9710,7 @@ h5,
   transform: scale(1);
 }
 #colorlib-main-nav .logo {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 #colorlib-main-nav ul {
   padding: 0;
@@ -9735,12 +9736,12 @@ h5,
 }
 #colorlib-main-nav ul li a {
   display: block;
-  color: white;
+  color: black;
   padding: 5px 0;
 }
 #colorlib-main-nav ul li a span {
   font-size: 40px;
-  color: white;
+  color: rgb(0, 0, 0);
   position: relative;
   padding: 0 10px;
 }
@@ -9761,7 +9762,7 @@ h5,
 #colorlib-main-nav ul li a:active,
 #colorlib-main-nav ul li a:focus {
   outline: none;
-  text-decoration: none;
+  text-decoration: underline;
 }
 #colorlib-main-nav ul li a:hover span:before,
 #colorlib-main-nav ul li a:active span:before,
@@ -9806,7 +9807,7 @@ header .colorlib-navbar-brand {
 }
 header .colorlib-navbar-brand .colorlib-logo {
   font-size: 20px;
-  text-transform: uppercase;
+
   color: rgb(0, 0, 0);
   font-weight: 400;
   letter-spacing: 5px;
@@ -10082,7 +10083,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   color: black;
   line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 10px;
   display: inline-block;
   position: relative;
@@ -10549,7 +10549,7 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.9);
 }
 .ftco-footer .ftco-footer-widget .email a {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .ftco-footer .ftco-footer-widget h2 {
   font-weight: 700;
@@ -10693,7 +10693,7 @@ h6 {
 .author-img,
 .logo-img,
 .user-img {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -10788,7 +10788,7 @@ h6 {
   font-weight: 500;
 }
 .blog-entry .text .heading a {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .blog-entry .text .heading a:hover,
 .blog-entry .text .heading a:focus,
@@ -10943,12 +10943,12 @@ h6 {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
   background: #2f89fc;
-  color: #fff;
+  color: rgb(0, 0, 0);
   border: 1px solid #2f89fc;
 }
 .block-8 .accordion-item .heading > a[aria-expanded='false']:before {
   content: '\e313';
-  color: #ccc;
+  color: rgb(0, 0, 0);
   font-family: 'icomoon';
   position: absolute;
   -webkit-transition: 0.3s all ease;
@@ -11086,7 +11086,7 @@ h6 {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #8c8c8c;
+  color: #000000;
 }
 
 .block-3 .text .heading {
@@ -11094,7 +11094,7 @@ h6 {
   margin-bottom: 30px;
 }
 .block-3 .text .heading a {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .block-3 .text p:last-child {
