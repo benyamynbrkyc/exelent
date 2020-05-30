@@ -1,16 +1,15 @@
-const express = require('express');
-//var server = express.createServer();
-// express.createServer()  is deprecated.
-const app = express(); // better instead
+const express = require("express")
+const path = require("path")
+const app = express()
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + "/public"))
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname, '/public/index.html');
-});
+app.get("/", (req, res) => {
+  res.sendFile(__dirname, "/public/index.html")
+})
 
 app.listen(PORT, () => {
-  console.log('Server listening on port,', PORT);
-});
+  console.log("Server listening on port,", PORT)
+})
