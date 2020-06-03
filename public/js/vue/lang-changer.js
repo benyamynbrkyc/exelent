@@ -2,9 +2,7 @@
 
 new Vue({
   el: '#app',
-  data() {
-    return { text: undefined }
-  },
+  data: { text: { navbar: [undefined], hero: [undefined], ici: [undefined] } },
   beforeCreate: async function () {
     let bosObj = await axios.get('/translate/bos')
     this.text = bosObj.data
