@@ -3,9 +3,9 @@
 new Vue({
   el: '#app',
   data() {
-    return { text: async () => await axios.get('/translate/bos') }
+    return { text: undefined }
   },
-  beforeMount: async function () {
+  beforeCreate: async function () {
     let bosObj = await axios.get('/translate/bos')
     this.text = bosObj.data
   },
