@@ -1,3 +1,21 @@
 {
-  "titleBar": ["Home", "Rezime", "Servisi", "Portfolio", "Blog", "Kontakt"]
+  "navbar": [
+    "Home",
+    "Rezime",
+    "Servisi",
+    "Portfolio",
+    "Blog",
+    "Kontakt"
+  ],
+  "hero": [
+    "Zdravo! Mi smo",
+    "Naš rad je uvijek"
+  ],
+  "ici": [
+    "Zdravo! Mi smo EXElent",
+    "Nudimo najbolji enterprise softver na tržištu. Ponosimo se našim radom i sigurni smo da imamo pravi proizvod za Vas.",
+    "Šta nudimo?",
+    "Kontaktirajte nas!",
+    "Telefon"
+  ]
 }

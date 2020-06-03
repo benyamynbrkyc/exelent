@@ -73,19 +73,19 @@
       $(document).ready(function () {
         $('body').append(
           '<button id="toTop" class="btn-info"><span class="glyphicon glyphicon-chevron-up"></span></button>'
-        );
+        )
         $(window).scroll(function () {
           if ($(this).scrollTop() != 0) {
-            $('#toTop').fadeIn();
+            $('#toTop').fadeIn()
           } else {
-            $('#toTop').fadeOut();
+            $('#toTop').fadeOut()
           }
-        });
+        })
         $('#toTop').click(function () {
-          $('html, body').animate({ scrollTop: 0 }, 600);
-          return false;
-        });
-      });
+          $('html, body').animate({ scrollTop: 0 }, 600)
+          return false
+        })
+      })
     </script>
   </head>
   <body>
@@ -122,32 +122,32 @@
                   <ul>
                     <li class="active">
                       <a href="index.html"
-                        ><span><small>01</small>{{text.titleBar[0]}}</span></a
+                        ><span><small>01</small>{{text.navbar[0]}}</span></a
                       >
                     </li>
                     <li>
                       <a href="about.html"
-                        ><span><small>02</small>{{text.titleBar[1]}}</span></a
+                        ><span><small>02</small>{{text.navbar[1]}}</span></a
                       >
                     </li>
                     <li>
                       <a href="services.html"
-                        ><span><small>03</small>Services</span></a
+                        ><span><small>03</small>{{text.navbar[2]}}</span></a
                       >
                     </li>
                     <li>
                       <a href="portfolio.html"
-                        ><span><small>04</small>Portfolio</span></a
+                        ><span><small>04</small>{{text.navbar[3]}}</span></a
                       >
                     </li>
                     <li>
                       <a href="blog.html"
-                        ><span><small>05</small>Blog</span></a
+                        ><span><small>05</small>{{text.navbar[4]}}</span></a
                       >
                     </li>
                     <li>
                       <a href="contact.html"
-                        ><span><small>06</small>Contact</span></a
+                        ><span><small>06</small>{{text.navbar[5]}}</span></a
                       >
                     </li>
                   </ul>
@@ -173,6 +173,18 @@
                   <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
                     ><i></i
                   ></a>
+                  <a
+                    @click="langSwitch"
+                    ref="lang"
+                    href="#"
+                    style="
+                      float: right;
+                      margin-top: 5px;
+                      margin-right: 50px;
+                      color: black;
+                    "
+                    >BA</a
+                  >
                 </div>
               </div>
             </div>
@@ -190,7 +202,7 @@
                     class="col-md-12 ftco-animate"
                     data-scrollax=" properties: { translateY: '70%' }"
                   >
-                    <p><a href="#" class="scroll">Hello! We are</a></p>
+                    <p><a href="#" class="scroll">{{text.hero[0]}}</a></p>
                     <h1
                       class=""
                       data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
@@ -213,7 +225,7 @@
                     class="col-md-12 ftco-animate"
                     data-scrollax=" properties: { translateY: '70%' }"
                   >
-                    <p><a href="#" class="scroll">Our work is always</a></p>
+                    <p><a href="#" class="scroll">{{text.hero[1]}}</a></p>
                     <h1
                       class="mb-3"
                       data-scrollax="properties: {translateY: '30%', opacity: 1.6}"
@@ -239,13 +251,11 @@
                 <div class="col-md-6 wrap ftco-animate">
                   <div class="about-desc">
                     <div class="p-5">
-                      <h2 class="mb-5">Zdravo! Mi smo EXElent</h2>
+                      <h2 class="mb-5">{{text.ici[0]}}</h2>
                       <p>
-                        Nudimo najbolji enterprise softver na tržištu. Ponosimo
-                        se našim radom i sigurni smo da imamo pravi proizvod za
-                        Vas.
+                        {{text.ici[1]}}
                       </p>
-                      <p><a href="#">Šta nudimo?</a></p>
+                      <p><a href="#">{{text.ici[2]}}</a></p>
                       <ul class="ftco-footer-social list-unstyled mt-4">
                         <li>
                           <a href="#"><span class="icon-twitter"></span></a>
@@ -257,9 +267,9 @@
                           <a href="#"><span class="icon-instagram"></span></a>
                         </li>
                       </ul>
-                      <h5>Kontaktirajte nas!</h5>
+                      <h5>{{text.ici[3]}}</h5>
                       <p>Email: <a href="#">email@email.com</a></p>
-                      <p>Telefon: <a href="#">(123)-456-789</a></p>
+                      <p>{{text.ici[4]}}: <a href="#">(123)-456-789</a></p>
                     </div>
                   </div>
                 </div>
@@ -630,18 +640,18 @@
     </div>
     <script>
       $(function () {
-        var $btn = $('#btnTop');
-        var $home = $('#topSection');
-        var startpoint = $home.scrollTop() + $home.height();
+        var $btn = $('#btnTop')
+        var $home = $('#topSection')
+        var startpoint = $home.scrollTop() + $home.height()
 
         $(window).on('scroll', function () {
           if ($(window).scrollTop() > startpoint) {
-            $btn.show();
+            $btn.show()
           } else {
-            $btn.hide();
+            $btn.hide()
           }
-        });
-      });
+        })
+      })
     </script>
 
     <script src="js/jquery.min.js"></script>
