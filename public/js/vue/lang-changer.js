@@ -1,4 +1,4 @@
-const LOCAL_API_URL = 'http://localhost:3001/translate'
+const LOCAL_API_URL = '/translate'
 
 // request from backend the js object then save it to data
 // use that data to populate the HTML
