@@ -1,26 +1,23 @@
-const LOCAL_API_URL = '/translate'
-
-// request from backend the js object then save it to data
-// use that data to populate the HTML
+// const LOCAL_API_URL = '/translate'
 
 new Vue({
   el: '#app',
   data() {
-    return { text: null }
+    return { text: async () => await axios.get('/translate/bos') }
   },
-  beforeCreate: async function () {
-    let bosObj = await axios.get(LOCAL_API_URL + '/bos')
+  beforeMount: async function () {
+    let bosObj = await axios.get('/translate/bos')
     this.text = bosObj.data
   },
   methods: {
     async langSwitch() {
       if (this.$refs.lang.innerText == 'BA') {
         this.$refs.lang.innerText = 'EN'
-        let engObj = await axios.get(LOCAL_API_URL + '/eng')
+        let engObj = await axios.get('/translate/eng')
         this.text = engObj.data
       } else {
         this.$refs.lang.innerText = 'BA'
-        let bosObj = await axios.get(LOCAL_API_URL + '/bos')
+        let bosObj = await axios.get('/translate/bos')
         this.text = bosObj.data
       }
     },
