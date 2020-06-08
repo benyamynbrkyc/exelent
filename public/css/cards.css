@@ -69,6 +69,10 @@
   transform: scale(0.98);
 }
 
+.boldText > h3 {
+  font-weight: bold;
+}
+
 .listContainer {
   position: relative;
   display: flex;
@@ -212,4 +216,65 @@
     margin-right: 0px;
     margin-bottom: 17px;
   }
+}
+
+.linkCardContainer {
+  text-align: center;
+}
+.linkCardContainer .card {
+  padding: 10px 20px;
+  background: whitesmoke;
+  border-radius: 40px;
+  /* box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: -6px -6px 20px rgb(255, 255, 255), 6px 6px 10px rgba(0, 0, 0, 0.1);
+  border: 0px solid whitesmoke;
+}
+.linkCardContainer .card:hover {
+  box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.linkCardContainer .card .imgBx {
+  position: relative;
+  text-align: center;
+}
+.linkCardContainer .card .imgBx img {
+  max-width: 120px;
+}
+.linkCardContainer .card .contentBx {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+.linkCardContainer .card .contentBx h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+.linkCardContainer .card .contentBx p {
+  color: black;
+}
+.linkCardContainer .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+    4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.linkCardContainer .card .contentBx a:hover {
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.linkCardContainer .card a:hover span {
+  display: block;
+  transform: scale(0.98);
+}
+.linkCardContainer .card:hover .imgBx,
+.linkCardContainer .card:hover .contentBx {
+  transform: scale(0.98);
 }
