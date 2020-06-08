@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'))
 })
 
-app.get('/isaerp', (req, res) => {
+app.get('/isa-erp', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/isa-erp.html'))
 })
 
