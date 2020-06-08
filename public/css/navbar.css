@@ -100,6 +100,7 @@
 .navbar .navbar-header > a {
   font-weight: 500;
   color: #3c4250;
+  text-decoration: none;
 }
 .navbar .navbar-menu {
   display: flex;

@@ -18,6 +18,10 @@ app.get('/isa-erp', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/isa-erp.html'))
 })
 
+app.get('/contact', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/contact.html'))
+})
+
 app.listen(PORT, () => {
   console.log('Server listening on port,', PORT)
 })

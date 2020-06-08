@@ -108,7 +108,7 @@
       </div>
       <div class="page">
         <!-- NAV START -->
-        
+
         <nav class="navbar">
           <div class="navContainer">
             <div class="navbar-header">
@@ -131,453 +131,452 @@
               <ul class="navbar-nav">
                 <div class="navCardContainer">
                   <li class="card" id="navCard">
-                    <a href="#">Home</a>
+                    <a href="/" style="color: black;">Home</a>
                   </li>
                 </div>
 
                 <div class="navCardContainer">
                   <li class="card" id="navCard">
-                    <a href="#">ISA-ERP</a>
+                    <a href="/isa-erp">ISA-ERP</a>
                   </li>
                 </div>
 
                 <div class="navCardContainer">
                   <li class="card">
-                    <a href="#">Contact</a>
+                    <a href="/contact" style="color: black;">Contact</a>
                   </li>
                 </div>
               </ul>
             </div>
           </div>
         </nav>
-          <!-- NAV END -->
+        <!-- NAV END -->
 
-          <section class="home-slider owl-carousel js-fullheight">
-            <div class="slider-item js-fullheight">
-              <div class="overlay"></div>
-              <div class="container">
+        <section class="home-slider owl-carousel js-fullheight">
+          <div class="slider-item js-fullheight">
+            <div class="overlay"></div>
+            <div class="container">
+              <div
+                class="row slider-text align-items-center text-center justify-content-center"
+                data-scrollax-parent="true"
+              >
                 <div
-                  class="row slider-text align-items-center text-center justify-content-center"
-                  data-scrollax-parent="true"
+                  class="col-md-12 ftco-animate"
+                  data-scrollax=" properties: { translateY: '70%' }"
                 >
-                  <div
-                    class="col-md-12 ftco-animate"
-                    data-scrollax=" properties: { translateY: '70%' }"
+                  <div style="display: inline; text-align: center;">
+                    <img
+                      src="images/ISA-ERP.png"
+                      style="
+                        width: 250px;
+                        height: auto;
+                        display: inline;
+                        text-align: center;
+                      "
+                    />
+                  </div>
+                  <br />
+                  <br />
+
+                  <h1
+                    class="scroll"
+                    id="scroll"
+                    style="display: block; cursor: pointer;"
+                    data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
+                    @click="scrollDown"
                   >
-                    <div style="display: inline; text-align: center;">
-                      <img
-                        src="images/ISA-ERP.png"
-                        style="
-                          width: 250px;
-                          height: auto;
-                          display: inline;
-                          text-align: center;
-                        "
-                      />
+                    <div class="scrollContainer">
+                      <div class="scrollChevron"></div>
+                      <div class="scrollChevron"></div>
+                      <div class="scrollChevron"></div>
                     </div>
-                    <br />
-                    <br />
-
-                    <h1
-                      class="scroll"
-                      id="scroll"
-                      style="display: block; cursor: pointer;"
-                      data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-                      @click="scrollDown"
-                    >
-                      <div class="scrollContainer">
-                        <div class="scrollChevron"></div>
-                        <div class="scrollChevron"></div>
-                        <div class="scrollChevron"></div>
-                      </div>
-                    </h1>
-                  </div>
+                  </h1>
                 </div>
               </div>
-            </div>
-          </section>
-          <!-- END slider -->
-          <div class="container" id="isa-erp-intro">
-            <div class="row" style="padding-left: 10px; padding-right: 10px;">
-              <h4 class="subheading">ISA-ERP</h4>
-              <h4 class="mb-4" style="width: 100%; font-size: 1.2em;">
-                ISA-ERP programski paket je skup međusobno povezanih programskih
-                modula ili podprograma koji cine kompletni poslovno informacioni
-                sistem.
-              </h4>
-
-              <h1
-                class="mb-4"
-                style="
-                  border-bottom: 1px solid #2f89fc;
-                  margin-top: 70px;
-                  margin-bottom: 70px;
-                "
-              >
-                Moduli
-              </h1>
-
-              <div class="listContainer" id="listContainer">
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Finansijsko knjigovodstvo
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Robno knjigovodstvo - Veleprodaja
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Robno knjigovodstvo - Maloprodaja
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      POS Kasa
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Materijalno knjigovodstvo
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Proizvodnja na bazi normativa
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Fakturisanje usluga
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Knjiga ulaznih faktura, knjiga izlaznih faktura i
-                      generisanje PDV prijave
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Blagajna
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Plate
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Kadrovska evidencija
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Stalna sredstva
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Putni nalozi
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Virmani
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="contentBx">
-                    <p>
-                      Finansijske knjizne obavijesti
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <p style="margin-bottom: 50px; margin-top: 50px;">
-                ISA-ERP je u potpunosti usklađen s pozitivnim zakonskim
-                propisima u Federaciji Bosne i Hercegovine i Republici Srpskoj.
-                Na sve eventualne izmjene i dopune zakonskih propisa se reaguje
-                u najkraćem mogućem roku i programi se odmah usklađuju s
-                eventualnim izmjenama.
-              </p>
-
-              <h1
-                class="mb-4"
-                style="
-                  border-bottom: 1px solid #2f89fc;
-                  margin-top: 70px;
-                  margin-bottom: 70px;
-                "
-              >
-                Opste Karakteristike
-              </h1>
-
-              <!-- CARDS NEU START -->
-              <div class="cardContainer">
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/domain.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>All-In-One Sistem</h2>
-                    <p>
-                      Svi moduli i svi elementi se nalaze u jednom programu i
-                      međusobno su povezani. Podaci uneseni u jednom modulu su
-                      odmah i u drugom modulu na raspolaganju, tako da nema
-                      duplog unosa podataka.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/popular.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Jednostavnost Koristenja</h2>
-                    <p>
-                      Korisnički interfejs (GUI) osmišljen je da omogući
-                      korisniku da na jednostavan način evidentira, obradi i
-                      izvjesti o svim poslovnim promjenama.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/server.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Centralizovana Baza Podataka</h2>
-                    <p>
-                      Svi korisnici sistema pristupaju jednoj bazi podataka čime
-                      se smanjuje mogućnost duplikacije podataka, netačnih
-                      podataka ili neusklađenosti podataka.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/shield.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Automatska Zastita Podataka</h2>
-                    <p>
-                      Za sigurnost, integritet i arhiviranje podataka brine se
-                      sistem za upravljanje bazama podataka. Vasi podaci su
-                      uvijek sigurni i na mjestu.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/rocket.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Nadogradnja Programa</h2>
-                    <p>
-                      Praćenjem globalnih tehnoloških trendova u mogućnosti smo
-                      da u vrlo kratkom vremenskom roku i bez ograničenja
-                      mijenjamo i nadograđujemo postojeći informacioni sistem.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/girl.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Korisnicka Prava</h2>
-                    <p>
-                      U zavisnosti od pozicije u preduzeću, svakom korisniku je
-                      moguće dodijeliti određen nivo ovlaštenja i pristupa
-                      programu i podataka koje može vidjeti/mijenjati.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/laptop.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Elektronsko Poslovanje</h2>
-                    <p>
-                      Omogućena je komunikacija sa programima svih banaka radi
-                      jednostavnijeg importa platnih naloga u program banke.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/import-export.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Uvoz - Izvoz Podataka</h2>
-                    <p>
-                      Mogućnost uvoza podataka iz različitih formata: Txt,
-                      Excel, XML, DBF i ostale. Slanje dokumenata putem e-pošte
-                      direktno iz programa, izvoz dokumenata u Word, Excel,
-                      HTML, XML, PDF i druge formate dokumenata
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/chat-bubble.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Mobilna Aplikacija</h2>
-                    <p>
-                      ISA-ERP je u potpunosti prilagodjen vasem mobilnom
-                      uredjaju tako da mozete u svakom momentu, na svakoj
-                      lokaciji da pristupite vasim podacima. U svakom momentu
-                      imate pristup bazi podataka.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/framework.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Rad u mrezi, lokalna i udaljena</h2>
-                    <p>
-                      Neograničen broj istovremenih korisnika koji pristupaju
-                      istoj bazi podataka iz bilo kog modula.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/fiscal.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Fiskalizacija i izvjestaji</h2>
-                    <p>
-                      ISA-ERP radi sa svim fiskalnim uredjajima koji su prisutni
-                      na trzistu BiH. ISA-ERP nudi više od 300 različitih
-                      izvještaja po raznim kriterijima uz kontinuirano kreiranje
-                      novih u zavisnosti od potreba, ideja i zahtjeva.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="imgBx">
-                    <img src="icons/book.svg" alt="" />
-                  </div>
-                  <div class="contentBx">
-                    <h2>Knjigovodstvo</h2>
-                    <p>
-                      Potpuna integracija pomoćnih knjigovodstava sa glavnom
-                      knjigom (Podatak unesen na jednom mjestu koriste svi
-                      programski moduli). ISA-ERP radi sa svim fiskalnim
-                      uređajima koji su prisutni na tržištu BiH.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- CARDS NEU END -->
             </div>
           </div>
-          <footer class="ftco-footer ftco-bg-dark ftco-section">
-            <div class="container">
-              <div class="row mb-5 justify-content-center">
-                <div class="col-md-5 text-center">
-                  <div class="ftco-footer-widget mb-5">
-                    <ul class="ftco-footer-social list-unstyled">
-                      <li class="ftco-animate">
-                        <a href="#"><span class="icon-twitter"></span></a>
-                      </li>
-                      <li class="ftco-animate">
-                        <a href="#"><span class="icon-facebook"></span></a>
-                      </li>
-                      <li class="ftco-animate">
-                        <a href="#"><span class="icon-instagram"></span></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="ftco-footer-widget">
-                    <h2 class="mb-3">Kontaktirajte nas</h2>
-                    <p class="h3 email"><a href="#">email@email.com</a></p>
-                  </div>
+        </section>
+        <!-- END slider -->
+        <div class="container" id="isa-erp-intro">
+          <div class="row" style="padding-left: 10px; padding-right: 10px;">
+            <h4 class="subheading">ISA-ERP</h4>
+            <h4 class="mb-4" style="width: 100%; font-size: 1.2em;">
+              ISA-ERP programski paket je skup međusobno povezanih programskih
+              modula ili podprograma koji cine kompletni poslovno informacioni
+              sistem.
+            </h4>
+
+            <h1
+              class="mb-4"
+              style="
+                border-bottom: 1px solid #2f89fc;
+                margin-top: 70px;
+                margin-bottom: 70px;
+              "
+            >
+              Moduli
+            </h1>
+
+            <div class="listContainer" id="listContainer">
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Finansijsko knjigovodstvo
+                  </p>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-12 text-center" id="footer">
+              <div class="card">
+                <div class="contentBx">
                   <p>
-                    DATUM Sva prava zadržana | Development by
-                    <i
-                      class="fa fa-instagram"
-                      aria-hidden="true"
-                      style="color: #fb3958;"
-                    ></i>
-                    <a
-                      style="color: #fb3958;"
-                      href="https://www.instagram.com/benyamynbrkyc/"
-                      target="_blank"
-                      >benyamynbrkyc</a
-                    >
+                    Robno knjigovodstvo - Veleprodaja
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Robno knjigovodstvo - Maloprodaja
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    POS Kasa
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Materijalno knjigovodstvo
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Proizvodnja na bazi normativa
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Fakturisanje usluga
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Knjiga ulaznih faktura, knjiga izlaznih faktura i
+                    generisanje PDV prijave
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Blagajna
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Plate
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Kadrovska evidencija
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Stalna sredstva
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Putni nalozi
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Virmani
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentBx">
+                  <p>
+                    Finansijske knjizne obavijesti
                   </p>
                 </div>
               </div>
             </div>
-          </footer>
 
-          <!-- loader -->
-          <div id="ftco-loader" class="show fullscreen">
-            <svg class="circular" width="48px" height="48px">
-              <circle
-                class="path-bg"
-                cx="24"
-                cy="24"
-                r="22"
-                fill="none"
-                stroke-width="4"
-                stroke="#eeeeee"
-              />
-              <circle
-                class="path"
-                cx="24"
-                cy="24"
-                r="22"
-                fill="none"
-                stroke-width="4"
-                stroke-miterlimit="10"
-                stroke="#F96D00"
-              />
-            </svg>
+            <p style="margin-bottom: 50px; margin-top: 50px;">
+              ISA-ERP je u potpunosti usklađen s pozitivnim zakonskim propisima
+              u Federaciji Bosne i Hercegovine i Republici Srpskoj. Na sve
+              eventualne izmjene i dopune zakonskih propisa se reaguje u
+              najkraćem mogućem roku i programi se odmah usklađuju s eventualnim
+              izmjenama.
+            </p>
+
+            <h1
+              class="mb-4"
+              style="
+                border-bottom: 1px solid #2f89fc;
+                margin-top: 70px;
+                margin-bottom: 70px;
+              "
+            >
+              Opste Karakteristike
+            </h1>
+
+            <!-- CARDS NEU START -->
+            <div class="cardContainer">
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/domain.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>All-In-One Sistem</h2>
+                  <p>
+                    Svi moduli i svi elementi se nalaze u jednom programu i
+                    međusobno su povezani. Podaci uneseni u jednom modulu su
+                    odmah i u drugom modulu na raspolaganju, tako da nema duplog
+                    unosa podataka.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/popular.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Jednostavnost Koristenja</h2>
+                  <p>
+                    Korisnički interfejs (GUI) osmišljen je da omogući korisniku
+                    da na jednostavan način evidentira, obradi i izvjesti o svim
+                    poslovnim promjenama.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/server.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Centralizovana Baza Podataka</h2>
+                  <p>
+                    Svi korisnici sistema pristupaju jednoj bazi podataka čime
+                    se smanjuje mogućnost duplikacije podataka, netačnih
+                    podataka ili neusklađenosti podataka.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/shield.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Automatska Zastita Podataka</h2>
+                  <p>
+                    Za sigurnost, integritet i arhiviranje podataka brine se
+                    sistem za upravljanje bazama podataka. Vasi podaci su uvijek
+                    sigurni i na mjestu.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/rocket.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Nadogradnja Programa</h2>
+                  <p>
+                    Praćenjem globalnih tehnoloških trendova u mogućnosti smo da
+                    u vrlo kratkom vremenskom roku i bez ograničenja mijenjamo i
+                    nadograđujemo postojeći informacioni sistem.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/girl.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Korisnicka Prava</h2>
+                  <p>
+                    U zavisnosti od pozicije u preduzeću, svakom korisniku je
+                    moguće dodijeliti određen nivo ovlaštenja i pristupa
+                    programu i podataka koje može vidjeti/mijenjati.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/laptop.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Elektronsko Poslovanje</h2>
+                  <p>
+                    Omogućena je komunikacija sa programima svih banaka radi
+                    jednostavnijeg importa platnih naloga u program banke.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/import-export.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Uvoz - Izvoz Podataka</h2>
+                  <p>
+                    Mogućnost uvoza podataka iz različitih formata: Txt, Excel,
+                    XML, DBF i ostale. Slanje dokumenata putem e-pošte direktno
+                    iz programa, izvoz dokumenata u Word, Excel, HTML, XML, PDF
+                    i druge formate dokumenata
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/chat-bubble.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Mobilna Aplikacija</h2>
+                  <p>
+                    ISA-ERP je u potpunosti prilagodjen vasem mobilnom uredjaju
+                    tako da mozete u svakom momentu, na svakoj lokaciji da
+                    pristupite vasim podacima. U svakom momentu imate pristup
+                    bazi podataka.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/framework.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Rad u mrezi, lokalna i udaljena</h2>
+                  <p>
+                    Neograničen broj istovremenih korisnika koji pristupaju
+                    istoj bazi podataka iz bilo kog modula.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/fiscal.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Fiskalizacija i izvjestaji</h2>
+                  <p>
+                    ISA-ERP radi sa svim fiskalnim uredjajima koji su prisutni
+                    na trzistu BiH. ISA-ERP nudi više od 300 različitih
+                    izvještaja po raznim kriterijima uz kontinuirano kreiranje
+                    novih u zavisnosti od potreba, ideja i zahtjeva.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgBx">
+                  <img src="icons/book.svg" alt="" />
+                </div>
+                <div class="contentBx">
+                  <h2>Knjigovodstvo</h2>
+                  <p>
+                    Potpuna integracija pomoćnih knjigovodstava sa glavnom
+                    knjigom (Podatak unesen na jednom mjestu koriste svi
+                    programski moduli). ISA-ERP radi sa svim fiskalnim uređajima
+                    koji su prisutni na tržištu BiH.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- CARDS NEU END -->
           </div>
+        </div>
+        <footer class="ftco-footer ftco-bg-dark ftco-section">
+          <div class="container">
+            <div class="row mb-5 justify-content-center">
+              <div class="col-md-5 text-center">
+                <div class="ftco-footer-widget mb-5">
+                  <ul class="ftco-footer-social list-unstyled">
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-twitter"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-facebook"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-instagram"></span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ftco-footer-widget">
+                  <h2 class="mb-3">Kontaktirajte nas</h2>
+                  <p class="h3 email"><a href="#">email@email.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center" id="footer">
+                <p>
+                  DATUM Sva prava zadržana | Development by
+                  <i
+                    class="fa fa-instagram"
+                    aria-hidden="true"
+                    style="color: #fb3958;"
+                  ></i>
+                  <a
+                    style="color: #fb3958;"
+                    href="https://www.instagram.com/benyamynbrkyc/"
+                    target="_blank"
+                    >benyamynbrkyc</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen">
+          <svg class="circular" width="48px" height="48px">
+            <circle
+              class="path-bg"
+              cx="24"
+              cy="24"
+              r="22"
+              fill="none"
+              stroke-width="4"
+              stroke="#eeeeee"
+            />
+            <circle
+              class="path"
+              cx="24"
+              cy="24"
+              r="22"
+              fill="none"
+              stroke-width="4"
+              stroke-miterlimit="10"
+              stroke="#F96D00"
+            />
+          </svg>
         </div>
       </div>
     </div>

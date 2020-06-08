@@ -14,6 +14,11 @@
     />
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
     <link rel="stylesheet" href="css/animate.css" />
 
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -30,233 +35,253 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+    <style>
+      #toTop {
+        margin: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 9px;
+        padding-right: 9px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        cursor: pointer;
+        display: none;
+        border: 2px solid black;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 0, 0);
+        /* color: #2f89fc; */
+        color: black;
+      }
+      #toTop:hover {
+        transition-duration: 0.3s;
+        border-color: #2f89fc;
+        color: #2f89fc;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('body').append(
+          '<button id="toTop" class="btn-info"><span class="glyphicon glyphicon-chevron-up"></span></button>'
+        )
+        $(window).scroll(function () {
+          if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn()
+          } else {
+            $('#toTop').fadeOut()
+          }
+        })
+        $('#toTop').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 600)
+          return false
+        })
+      })
+    </script>
   </head>
   <body>
     <div class="KW_progressContainer">
       <div class="KW_progressBar"></div>
     </div>
     <div class="page">
-      <nav id="colorlib-main-nav" role="navigation">
-        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"
-          ><i></i
-        ></a>
-        <div class="js-fullheight colorlib-table">
-          <div
-            class="img"
-            style="background-image: url(images/author-2.jpg);"
-          ></div>
-          <div class="colorlib-table-cell js-fullheight">
-            <div class="row no-gutters">
-              <div class="col-md-12 text-center">
-                <h1 class="mb-4">
-                  <a href="index.html" class="logo">EXElent</a>
-                </h1>
-                <ul>
-                  <li>
-                    <a href="index.html"
-                      ><span><small>01</small>Home</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="about.html"
-                      ><span><small>02</small>Resume</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="services.html"
-                      ><span><small>03</small>Services</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="portfolio.html"
-                      ><span><small>04</small>Portfolio</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="blog.html"
-                      ><span><small>05</small>Blog</span></a
-                    >
-                  </li>
-                  <li class="active">
-                    <a href="contact.html"
-                      ><span><small>06</small>Contact</span></a
-                    >
-                  </li>
-                </ul>
+      <nav class="navbar">
+        <div class="navContainer">
+          <div class="navbar-header">
+            <button class="navbar-toggler" data-toggle="open-navbar1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a href="#">
+              <img
+                id="nav-logo"
+                src="images/Logo2_mali.png"
+                height="30px"
+                width="auto"
+              />
+            </a>
+          </div>
+
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+              <div class="navCardContainer">
+                <li class="card" id="navCard">
+                  <a href="/" style="color: black;">Home</a>
+                </li>
               </div>
-            </div>
+
+              <div class="navCardContainer">
+                <li class="card" id="navCard">
+                  <a href="/isa-erp" style="color: black;">ISA-ERP</a>
+                </li>
+              </div>
+
+              <div class="navCardContainer">
+                <li class="card">
+                  <a href="/contact">Contact</a>
+                </li>
+              </div>
+            </ul>
           </div>
         </div>
       </nav>
 
-      <div id="colorlib-page">
-        <header>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="colorlib-navbar-brand">
-                  <a class="colorlib-logo" href="index.html"
-                    ><span
-                      class="logo-img"
-                      style="background-image: url(images/tick_bw.png);"
-                    ></span
-                    >EXElent</a
-                  >
-                </div>
-                <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
-                  ><i></i
-                ></a>
-              </div>
+      <section class="ftco-section contact-section">
+        <div class="container mt-5">
+          <div class="row d-flex mb-5 contact-info">
+            <div class="col-md-12 mb-4">
+              <h2 class="h4">Contact Information</h2>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md-3">
+              <p>
+                <span>Address:</span> 198 West 21th Street, Suite 721 New York
+                NY 10016
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p>
+                <span>Phone:</span>
+                <a href="tel://1234567920">+ 1235 2355 98</a>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p>
+                <span>Email:</span>
+                <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p><span>Website:</span> <a href="#">yoursite.com</a></p>
             </div>
           </div>
-        </header>
-
-        <section class="ftco-section contact-section">
-          <div class="container mt-5">
-            <div class="row d-flex mb-5 contact-info">
-              <div class="col-md-12 mb-4">
-                <h2 class="h4">Contact Information</h2>
-              </div>
-              <div class="w-100"></div>
-              <div class="col-md-3">
-                <p>
-                  <span>Address:</span> 198 West 21th Street, Suite 721 New York
-                  NY 10016
-                </p>
-              </div>
-              <div class="col-md-3">
-                <p>
-                  <span>Phone:</span>
-                  <a href="tel://1234567920">+ 1235 2355 98</a>
-                </p>
-              </div>
-              <div class="col-md-3">
-                <p>
-                  <span>Email:</span>
-                  <a href="mailto:info@yoursite.com">info@yoursite.com</a>
-                </p>
-              </div>
-              <div class="col-md-3">
-                <p><span>Website:</span> <a href="#">yoursite.com</a></p>
-              </div>
-            </div>
-            <div class="row block-9">
-              <div class="col-md-6 pr-md-5">
-                <form action="#">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Email"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Subject"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="7"
-                      class="form-control"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="submit"
-                      value="Send Message"
-                      class="btn btn-primary py-3 px-5"
-                    />
-                  </div>
-                </form>
-              </div>
-              <div class="col-md-6" id="map"></div>
-            </div>
-          </div>
-        </section>
-
-        <footer class="ftco-footer ftco-bg-dark ftco-section">
-          <div class="container">
-            <div class="row mb-5 justify-content-center">
-              <div class="col-md-5 text-center">
-                <div class="ftco-footer-widget mb-5">
-                  <ul class="ftco-footer-social list-unstyled">
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-twitter"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-facebook"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-instagram"></span></a>
-                    </li>
-                  </ul>
+          <div class="row block-9">
+            <div class="col-md-6 pr-md-5">
+              <form action="#">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
                 </div>
-                <div class="ftco-footer-widget">
-                  <h2 class="mb-3">Contact Us</h2>
-                  <p class="h3 email"><a href="#">info@email.com</a></p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Email"
+                  />
                 </div>
-              </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="7"
+                    class="form-control"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    class="btn btn-primary py-3 px-5"
+                  />
+                </div>
+              </form>
             </div>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <p>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  All rights reserved | This template is made with
-                  <i
-                    class="icon-heart"
-                    aria-hidden="true"
-                    style="color: red;"
-                  ></i>
-                  by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-              </div>
-            </div>
+            <div class="col-md-6" id="map"></div>
           </div>
-        </footer>
-
-        <!-- loader -->
-        <div id="ftco-loader" class="show fullscreen">
-          <svg class="circular" width="48px" height="48px">
-            <circle
-              class="path-bg"
-              cx="24"
-              cy="24"
-              r="22"
-              fill="none"
-              stroke-width="4"
-              stroke="#eeeeee"
-            />
-            <circle
-              class="path"
-              cx="24"
-              cy="24"
-              r="22"
-              fill="none"
-              stroke-width="4"
-              stroke-miterlimit="10"
-              stroke="#F96D00"
-            />
-          </svg>
         </div>
+      </section>
+
+      <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-5 text-center">
+              <div class="ftco-footer-widget mb-5">
+                <ul class="ftco-footer-social list-unstyled">
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="ftco-footer-widget">
+                <h2 class="mb-3">Kontaktirajte nas</h2>
+                <p class="h3 email"><a href="#">email@email.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                DATUM Sva prava zadržana | Development by
+                <i
+                  class="fa fa-instagram"
+                  aria-hidden="true"
+                  style="color: #fb3958;"
+                ></i>
+                <a
+                  style="color: #fb3958;"
+                  href="https://www.instagram.com/benyamynbrkyc/"
+                  target="_blank"
+                  >benyamynbrkyc</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle
+            class="path-bg"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke="#eeeeee"
+          />
+          <circle
+            class="path"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke-miterlimit="10"
+            stroke="#F96D00"
+          />
+        </svg>
       </div>
     </div>
 
@@ -277,5 +302,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>

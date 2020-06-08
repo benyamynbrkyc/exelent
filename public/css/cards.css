@@ -149,8 +149,9 @@
   padding: 10px 20px;
   background: whitesmoke;
   border-radius: 40px;
-  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
-    6px 6px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: -6px -6px 20px rgb(255, 255, 255), 6px 6px 10px rgba(0, 0, 0, 0.1);
   border: 0px solid whitesmoke;
 }
 .navCardContainer .card:hover {
