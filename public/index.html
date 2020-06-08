@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/cards.css" />
 
     <link
       rel="stylesheet"
@@ -100,93 +102,56 @@
           <i class="fa fa-arrow-up"></i>
         </a>
       </div>
+      <!-- BACK TO TOP BTN END -->
 
       <div class="KW_progressContainer">
         <div class="KW_progressBar"></div>
       </div>
+      <!-- PROGRESS BAR END -->
+
       <div class="page">
-        <nav id="colorlib-main-nav" role="navigation">
-          <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"
-            ><i></i
-          ></a>
-          <div class="js-fullheight colorlib-table">
-            <div class="colorlib-table-cell js-fullheight">
-              <div class="row no-gutters">
-                <div class="col-md-12 text-center">
-                  <h1 class="mb-4">
-                    <a href="index.html" class="logo">EXElent</a>
-                  </h1>
-                  <ul v-if="text.navbar">
-                    <li class="active">
-                      <a href="index.html"
-                        ><span><small>01</small>{{text.navbar[0]}}</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="about.html"
-                        ><span><small>02</small>{{text.navbar[1]}}</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="services.html"
-                        ><span><small>03</small>{{text.navbar[2]}}</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="portfolio.html"
-                        ><span><small>04</small>{{text.navbar[3]}}</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="blog.html"
-                        ><span><small>05</small>{{text.navbar[4]}}</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="contact.html"
-                        ><span><small>06</small>{{text.navbar[5]}}</span></a
-                      >
-                    </li>
-                  </ul>
+        <nav class="navbar">
+          <div class="navContainer">
+            <div class="navbar-header">
+              <button class="navbar-toggler" data-toggle="open-navbar1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <a href="#">
+                <img
+                  id="nav-logo"
+                  src="images/Logo2_mali.png"
+                  height="30px"
+                  width="auto"
+                />
+              </a>
+            </div>
+
+            <div class="navbar-menu" id="open-navbar1">
+              <ul class="navbar-nav">
+                <div class="navCardContainer">
+                  <li class="card" id="navCard">
+                    <a href="#">Home</a>
+                  </li>
                 </div>
-              </div>
+
+                <div class="navCardContainer">
+                  <li class="card" id="navCard">
+                    <a href="#">ISA-ERP</a>
+                  </li>
+                </div>
+
+                <div class="navCardContainer">
+                  <li class="card">
+                    <a href="#">Contact</a>
+                  </li>
+                </div>
+              </ul>
             </div>
           </div>
         </nav>
-
         <div id="colorlib-page">
-          <header>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="colorlib-navbar-brand">
-                    <a class="colorlib-logo" href="index.html"
-                      ><span
-                        class="logo-img"
-                        style="background-image: url(images/Logo2_mali.png);"
-                      ></span
-                    ></a>
-                  </div>
-                  <!-- <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
-                    ><i></i
-                  ></a> -->
-                  <a
-                    @click="langSwitch"
-                    ref="lang"
-                    href="#"
-                    style="
-                      float: right;
-                      margin-top: 5px;
-                      margin-right: 50px;
-                      color: black;
-                    "
-                    >BA</a
-                  >
-                </div>
-              </div>
-            </div>
-          </header>
-
           <section class="home-slider owl-carousel js-fullheight">
             <div class="slider-item js-fullheight">
               <div class="overlay"></div>
@@ -682,5 +647,6 @@
     <!-- <script src="js/google-map.js"></script> -->
     <script src="js/main.js"></script>
     <script src="js/vue/lang-changer.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
