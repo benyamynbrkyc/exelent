@@ -64,7 +64,6 @@
   }
 }
 .navbar .navbar-header .navbar-toggler {
-  border-radius: 5px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -80,7 +79,7 @@
 .navbar .navbar-header .navbar-toggler span {
   height: 2px;
   width: 22px;
-  background-color: #929aad;
+  background-color: #000000;
   display: block;
 }
 .navbar .navbar-header .navbar-toggler span:not(:last-child) {
@@ -90,6 +89,7 @@
   font-weight: 500;
   color: #3c4250;
   text-decoration: none;
+  outline: none;
 }
 .navbar .navbar-menu {
   display: flex;
@@ -210,6 +210,7 @@
   bottom: 25px;
   right: 25px;
   cursor: pointer;
+  outline: none;
   display: none;
   border-radius: 50px;
   background-color: whitesmoke;
@@ -222,6 +223,7 @@
   transition-duration: 0.3s;
   border-color: #2f89fc;
   color: #2f89fc;
+  outline: none;
   /* box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
     6px 6px 20px #2f89fc; */
   border: 0px solid whitesmoke;

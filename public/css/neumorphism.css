@@ -278,3 +278,75 @@
 .linkCardContainer .card:hover .contentBx {
   transform: scale(0.98);
 }
+
+.navButtonCardContainer {
+  text-align: center;
+}
+.navButtonCardContainer .card {
+  padding: 17.5px 17.5px;
+  background: whitesmoke;
+  border-radius: 50px;
+  /* box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: -6px -6px 20px rgb(255, 255, 255), 6px 6px 10px rgba(0, 0, 0, 0.1);
+  border: 0px solid whitesmoke;
+}
+.navButtonCardContainer .card:hover {
+  box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.navButtonCardContainer .card .imgBx {
+  position: relative;
+  text-align: center;
+}
+.navButtonCardContainer .card .imgBx img {
+  max-width: 120px;
+}
+.navButtonCardContainer .card .contentBx {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+.navButtonCardContainer .card .contentBx h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+.navButtonCardContainer .card .contentBx p {
+  color: black;
+}
+.navButtonCardContainer .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+    4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.navButtonCardContainer .card .contentBx a:hover {
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navButtonCardContainer .card a:hover span {
+  display: block;
+  transform: scale(0.98);
+}
+.navButtonCardContainer .card:hover .imgBx,
+.navButtonCardContainer .card:hover .contentBx {
+  transform: scale(0.98);
+}
+
+#navCard {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  #navCard {
+    margin-right: 0px;
+    margin-bottom: 17px;
+  }
+}
