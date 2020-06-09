@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/neumorphism.css" />
 
     <link
       rel="stylesheet"
@@ -48,30 +48,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
-    <style>
-      #toTop {
-        margin: 15px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 9px;
-        padding-right: 9px;
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        cursor: pointer;
-        display: none;
-        border: 2px solid black;
-        border-radius: 50px;
-        background-color: rgba(0, 0, 0, 0);
-        /* color: #2f89fc; */
-        color: black;
-      }
-      #toTop:hover {
-        transition-duration: 0.3s;
-        border-color: #2f89fc;
-        color: #2f89fc;
-      }
-    </style>
     <script>
       $(document).ready(function () {
         $('body').append(
@@ -199,8 +175,20 @@
         <!-- END slider -->
         <div class="container" id="isa-erp-intro">
           <div class="row" style="padding-left: 10px; padding-right: 10px;">
-            <h4 class="subheading">ISA-ERP</h4>
-            <h4 class="mb-4" style="width: 100%; font-size: 1.2em;">
+            <h1
+              class="mb-4"
+              style="
+                border-bottom: 1px solid #2f89fc;
+                margin-top: 70px;
+                margin-bottom: 100px;
+              "
+            >
+              ISA-ERP
+            </h1>
+            <h4
+              class="mb-4"
+              style="width: 100%; font-size: 1.2em; margin-top: 30px;"
+            >
               ISA-ERP programski paket je skup međusobno povezanih programskih
               modula ili podprograma koji cine kompletni poslovno informacioni
               sistem.

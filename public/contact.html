@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/neumorphism.css" />
 
     <link
       rel="stylesheet"
@@ -47,31 +47,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-
-    <style>
-      #toTop {
-        margin: 15px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 9px;
-        padding-right: 9px;
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        cursor: pointer;
-        display: none;
-        border: 2px solid black;
-        border-radius: 50px;
-        background-color: rgba(0, 0, 0, 0);
-        /* color: #2f89fc; */
-        color: black;
-      }
-      #toTop:hover {
-        transition-duration: 0.3s;
-        border-color: #2f89fc;
-        color: #2f89fc;
-      }
-    </style>
     <script>
       $(document).ready(function () {
         $('body').append(
@@ -137,34 +112,70 @@
           </div>
         </div>
       </nav>
-
+      <div class="container">
+        <section class="ftco-section">
+          <div class="row no-gutters">
+            <div
+              class="block-3 d-md-flex ftco-animate"
+              data-scrollax-parent="true"
+            >
+              <a
+                id="contactChatImage"
+                href="portfolio-single.html"
+                class="image order-2 d-flex justify-content-center align-items-center"
+                style="
+                  background-image: url('images/chat.png');
+                  background-size: contain;
+                "
+                data-scrollax=" properties: { translateY: '-30%'}"
+              >
+              </a>
+              <div class="text order-1">
+                <h4 class="subheading">
+                  <img
+                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/237/waving-hand-sign_1f44b.png"
+                    style="width: auto; height: 40px;"
+                  />
+                </h4>
+                <h2 class="heading">
+                  <a href="#">Kontaktirajte nas!</a>
+                </h2>
+                <p>
+                  Posaljite nam e-mail ili direktnu poruku preko Messenger
+                  Chat-a.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <section class="ftco-section contact-section">
         <div class="container mt-5">
           <div class="row d-flex mb-5 contact-info">
             <div class="col-md-12 mb-4">
-              <h2 class="h4">Contact Information</h2>
+              <h2 class="h4">Kontakt Informacije (u izradi)</h2>
             </div>
             <div class="w-100"></div>
             <div class="col-md-3">
-              <p>
-                <span>Address:</span> 198 West 21th Street, Suite 721 New York
-                NY 10016
-              </p>
+              <p><span>Adresa:</span> Adresa</p>
             </div>
             <div class="col-md-3">
               <p>
                 <span>Phone:</span>
-                <a href="tel://1234567920">+ 1235 2355 98</a>
+                <a href="tel://1234567920">+ 123 456 789</a>
               </p>
             </div>
             <div class="col-md-3">
               <p>
                 <span>Email:</span>
-                <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                <a href="mailto:info@yoursite.com">email@email.com</a>
               </p>
             </div>
             <div class="col-md-3">
-              <p><span>Website:</span> <a href="#">yoursite.com</a></p>
+              <p>
+                <span>Website:</span>
+                <a href="#">https://exelent.herokuapp.com/</a>
+              </p>
             </div>
           </div>
           <div class="row block-9">

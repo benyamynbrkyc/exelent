@@ -28,18 +28,7 @@
 .navbar {
   padding: 1.15rem 1rem;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-  /* border-bottom: 1px solid #2f89fc; */
   background-color: whitesmoke;
-  /*
-  |-----------------------------------
-  | Start navbar logo or brand etc..
-  |-----------------------------------
-  */
-  /*
-  |-----------------------------------
-  | Start navbar menu
-  |-----------------------------------
-  */
 }
 @media (min-width: 576px) {
   .navbar .navContainer {
@@ -197,8 +186,6 @@
     font-size: 1.05rem;
   }
 }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
@@ -208,4 +195,36 @@
   #nav-logo {
     margin-right: 100px;
   }
+}
+
+/* 
+  Back to top Button section (kinda part of the navbar I guess :) )
+*/
+#toTop {
+  margin: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 9px;
+  padding-right: 9px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  display: none;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 20px rgba(0, 0, 0, 0.199);
+  border: 0px solid whitesmoke;
+  color: black;
+}
+#toTop:hover {
+  transition-duration: 0.3s;
+  border-color: #2f89fc;
+  color: #2f89fc;
+  /* box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 20px #2f89fc; */
+  border: 0px solid whitesmoke;
+  box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
