@@ -9,6 +9,7 @@
   width: 1100px;
   margin-top: 50px;
   margin-bottom: 50px;
+  transition: all 0.2s ease-in-out;
 }
 .cardContainer .card {
   width: 320px;
@@ -23,6 +24,7 @@
 .cardContainer .card:hover {
   box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
     inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
 }
 .cardContainer .card .imgBx {
   position: relative;
@@ -33,7 +35,6 @@
 }
 .cardContainer .card .contentBx {
   position: relative;
-  margin-top: 20px;
   text-align: center;
 }
 .cardContainer .card .contentBx h2 {
@@ -229,6 +230,7 @@
     6px 6px 10px rgba(0, 0, 0, 0.1); */
   box-shadow: -6px -6px 20px rgb(255, 255, 255), 6px 6px 10px rgba(0, 0, 0, 0.1);
   border: 0px solid whitesmoke;
+  margin-top: 30px;
 }
 .linkCardContainer .card:hover {
   box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
@@ -349,4 +351,209 @@
     margin-right: 0px;
     margin-bottom: 17px;
   }
+}
+
+.contactCardContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+}
+.contactCardContainer .contactCardWbk {
+  width: 100%;
+  margin: 20px;
+  padding: 10px 30px;
+  background: whitesmoke;
+  border-radius: 40px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 20px rgba(0, 0, 0, 0.1);
+  border: 0px solid whitesmoke;
+}
+.contactCardContainer .contactCardWbk:hover {
+  box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.contactCardContainer .contactCardWbk .imgBx {
+  position: relative;
+  text-align: center;
+}
+.contactCardContainer .contactCardWbk .imgBx img {
+  max-width: 60px;
+}
+.contactCardContainer .contactCardWbk .contentBx {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+.contactCardContainer .contactCardWbk .contentBx h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+.contactCardContainer .contactCardWbk .contentBx p {
+  color: black;
+}
+.contactCardContainer .contactCardWbk .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+    4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.contactCardContainer .contactCardWbk .contentBx a:hover {
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contactCardContainer .contactCardWbk a:hover span {
+  display: block;
+  transform: scale(0.98);
+}
+.contactCardContainer .contactCardWbk:hover .imgBx,
+.contactCardContainer .contactCardWbk:hover .contentBx {
+  transform: scale(0.98);
+}
+
+/* 
+ */
+
+.contactCardWbk {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.contactForm {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.contactButton,
+.contactInput {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+}
+
+.contactLabel {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.contactInput {
+  color: black;
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.contactInput:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.contactInputTextArea {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 16px;
+  background-color: #ebecf0;
+}
+
+.contactInput:focus {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.contactInput::placeholder {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.contactInputTextArea:focus {
+  color: black;
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.contactInputTextArea::placeholder {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.contactButton {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+.contactButton:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+.contactButton:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.contactButton .icon {
+  margin-right: 8px;
+}
+.contactButton.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+.contactButton.unit .icon {
+  margin-right: 0;
+}
+.contactButton.contactRed {
+  display: block;
+  width: 100%;
+  color: #ae1100;
+}
+
+.contactLabelText {
+  padding-left: 15px;
 }
