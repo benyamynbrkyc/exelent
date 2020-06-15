@@ -45,7 +45,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="js/vue/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -110,7 +110,10 @@
               </a>
             </div>
 
-            <div class="navbar-menu" id="open-navbar1">
+            <div
+              class="navbar-menu ftco-animate fadeInUp ftco-animated"
+              id="open-navbar1"
+            >
               <ul class="navbar-nav">
                 <div class="navCardContainer">
                   <li class="card" id="navCard">
@@ -134,54 +137,26 @@
           </div>
         </nav>
 
-        <section class="home-slider owl-carousel js-fullheight">
-          <div class="slider-item js-fullheight">
-            <div class="overlay"></div>
-            <div class="container">
+        <!-- START hero -->
+        <section class="ftco-section">
+          <div class="container" style="height: 100vh;">
+            <div
+              class="row justify-content-center mb-5 pb-5"
+              style="padding-top: 25px;"
+            >
               <div
-                class="row slider-text align-items-center text-center justify-content-center"
-                data-scrollax-parent="true"
+                class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated"
               >
-                <div
-                  class="col-md-12 ftco-animate"
-                  data-scrollax=" properties: { translateY: '70%' }"
-                >
-                  <p><a href="#" class="scroll">{{text.hero[0]}}</a></p>
-                  <h1
-                    class=""
-                    data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-                  >
-                    EXElent
-                  </h1>
-                </div>
+                <span>Trebate softver?</span>
+                <h2>Tu smo za Vas</h2>
               </div>
             </div>
-          </div>
-
-          <div class="slider-item js-fullheight">
-            <div class="overlay"></div>
-            <div class="container">
-              <div
-                class="row slider-text align-items-center text-center justify-content-center"
-                data-scrollax-parent="true"
-              >
-                <div
-                  class="col-md-12 ftco-animate"
-                  data-scrollax=" properties: { translateY: '70%' }"
-                >
-                  <p><a href="#" class="scroll">{{text.hero[1]}}</a></p>
-                  <h1
-                    class="mb-3"
-                    data-scrollax="properties: {translateY: '30%', opacity: 1.6}"
-                  >
-                    EXElent
-                  </h1>
-                </div>
-              </div>
+            <div class="row justify-content-center mb-5 pb-5">
+              <img id="heroImg" src="images/handshake.png" />
             </div>
           </div>
         </section>
-        <!-- END slider -->
+        <!-- END hero -->
 
         <section class="ftco-section about-section">
           <div class="container">
@@ -238,7 +213,7 @@
               <div class="cardContainer">
                 <div class="card">
                   <div class="imgBx">
-                    <img src="icons/multiple-layers.svg" alt="" />
+                    <img src="icons/multiple-layers.svg" />
                   </div>
                   <div class="contentBx boldText">
                     <h3>Mobilne Aplikacije</h3>
@@ -248,7 +223,7 @@
                 </div>
                 <div class="card">
                   <div class="imgBx">
-                    <img src="icons/cog.svg" alt="" />
+                    <img src="icons/cog.svg" />
                   </div>
                   <div class="contentBx boldText">
                     <h3>Prvoklasni Racunovodstveni Softver</h3>
@@ -258,7 +233,7 @@
                 </div>
                 <div class="card">
                   <div class="imgBx">
-                    <img src="icons/custom.svg" alt="" />
+                    <img src="icons/custom.svg" />
                   </div>
                   <div class="contentBx boldText">
                     <h3>
@@ -539,23 +514,10 @@
           </div>
         </section>
 
-        <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <footer class="ftco-footer ftco-bg-dark ftco-section" id="footer">
           <div class="container">
             <div class="row mb-5 justify-content-center">
               <div class="col-md-5 text-center">
-                <div class="ftco-footer-widget mb-5">
-                  <ul class="ftco-footer-social list-unstyled">
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-twitter"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-facebook"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-instagram"></span></a>
-                    </li>
-                  </ul>
-                </div>
                 <div class="ftco-footer-widget">
                   <h2 class="mb-3">Kontaktirajte nas</h2>
                   <p class="h3 email"><a href="#">email@email.com</a></p>
@@ -565,7 +527,7 @@
             <div class="row">
               <div class="col-md-12 text-center">
                 <p>
-                  DATUM Sva prava zadržana | Development by
+                  {{ currentYear }} Sva prava zadržana | Development by
                   <i
                     class="fa fa-instagram"
                     aria-hidden="true"
@@ -603,7 +565,7 @@
               fill="none"
               stroke-width="4"
               stroke-miterlimit="10"
-              stroke="#F96D00"
+              stroke="#2f89fc"
             />
           </svg>
         </div>
@@ -642,7 +604,7 @@
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
     <!-- <script src="js/google-map.js"></script> -->
     <script src="js/main.js"></script>
-    <script src="js/vue/lang-changer.js"></script>
+    <script src="js/vue/index.js"></script>
     <script src="js/navbar.js"></script>
   </body>
 </html>

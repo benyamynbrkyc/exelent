@@ -116,14 +116,23 @@
   margin-bottom: 0;
   list-style: none;
 }
-.navbar-menu {
+/* .navbar-menu {
   transition: ease-in 0.3s;
   animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 0.4s;
   -moz-animation: fadeIn ease 0.4s;
   -o-animation: fadeIn ease 0.4s;
   -ms-animation: fadeIn ease 0.4s;
+} */
+
+.navbar-dropdown {
+  transition: ease-in 1s;
 }
+
+.navbar-sticky {
+  transition: ease-in 1s;
+}
+
 @media (max-width: 768px) {
   .navbar .navbar-menu .navbar-nav {
     width: 100%;
@@ -205,6 +214,11 @@
   }
 }
 
+@media (max-width: 568px) {
+  #nav-logo {
+    margin-right: 0px;
+  }
+}
 /* 
   Back to top Button section (kinda part of the navbar I guess :) )
 */

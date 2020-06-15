@@ -131,46 +131,52 @@
         </nav>
         <!-- NAV END -->
 
-        <section class="home-slider owl-carousel js-fullheight">
-          <div class="slider-item js-fullheight">
-            <div class="overlay"></div>
-            <div class="container">
+        <section class="ftco-section">
+          <div class="container" style="height: 100vh;">
+            <div
+              class="row slider-text align-items-center text-center justify-content-center"
+              data-scrollax-parent="true"
+              style="padding-top: 25px;"
+            >
               <div
-                class="row slider-text align-items-center text-center justify-content-center"
-                data-scrollax-parent="true"
+                class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated"
+                style="margin-bottom: 30px;"
               >
-                <div
-                  class="col-md-12 ftco-animate"
-                  data-scrollax=" properties: { translateY: '70%' }"
-                >
-                  <div style="display: inline; text-align: center;">
-                    <img
-                      src="images/ISA-ERP.png"
-                      style="
-                        width: 250px;
-                        height: auto;
-                        display: inline;
-                        text-align: center;
-                      "
-                    />
-                  </div>
-                  <br />
-                  <br />
-
-                  <h1
-                    class="scroll"
-                    id="scroll"
-                    style="display: block; cursor: pointer;"
-                    data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-                    @click="scrollDown"
-                  >
-                    <div class="scrollContainer">
-                      <div class="scrollChevron"></div>
-                      <div class="scrollChevron"></div>
-                      <div class="scrollChevron"></div>
-                    </div>
-                  </h1>
+                <span>ISA-ERP</span>
+                <h2>Najbolji racunovodstveni softver</h2>
+                <hr class="highlighter-bot" />
+              </div>
+              <div
+                class="col-md-12 ftco-animate"
+                data-scrollax=" properties: { translateY: '70%' }"
+              >
+                <div style="display: inline; text-align: center;">
+                  <img
+                    src="images/ISA-ERP.png"
+                    style="
+                      width: 250px;
+                      height: auto;
+                      display: inline;
+                      text-align: center;
+                    "
+                  />
                 </div>
+                <br />
+                <br />
+
+                <h1
+                  class="scroll"
+                  id="scroll"
+                  style="display: block; cursor: pointer;"
+                  data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
+                  @click="scrollDown"
+                >
+                  <div class="scrollContainer">
+                    <div class="scrollChevron"></div>
+                    <div class="scrollChevron"></div>
+                    <div class="scrollChevron"></div>
+                  </div>
+                </h1>
               </div>
             </div>
           </div>
@@ -501,23 +507,10 @@
             <!-- CARDS NEU END -->
           </div>
         </div>
-        <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <footer class="ftco-footer ftco-bg-dark ftco-section" id="footer">
           <div class="container">
             <div class="row mb-5 justify-content-center">
               <div class="col-md-5 text-center">
-                <div class="ftco-footer-widget mb-5">
-                  <ul class="ftco-footer-social list-unstyled">
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-twitter"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-facebook"></span></a>
-                    </li>
-                    <li class="ftco-animate">
-                      <a href="#"><span class="icon-instagram"></span></a>
-                    </li>
-                  </ul>
-                </div>
                 <div class="ftco-footer-widget">
                   <h2 class="mb-3">Kontaktirajte nas</h2>
                   <p class="h3 email"><a href="#">email@email.com</a></p>
@@ -527,7 +520,7 @@
             <div class="row">
               <div class="col-md-12 text-center" id="footer">
                 <p>
-                  DATUM Sva prava zadržana | Development by
+                  {{ currentYear }} Sva prava zadržana | Development by
                   <i
                     class="fa fa-instagram"
                     aria-hidden="true"
@@ -565,7 +558,7 @@
               fill="none"
               stroke-width="4"
               stroke-miterlimit="10"
-              stroke="#F96D00"
+              stroke="#2f89fc"
             />
           </svg>
         </div>
@@ -605,7 +598,7 @@
     <!-- <script src="js/google-map.js"></script> -->
     <script src="js/main.js"></script>
     <!-- <script src="js/vue/lang-changer.js"></script> -->
-    <script src="js/vue/isa-erp-vue.js"></script>
+    <script src="js/vue/isa-erp.js"></script>
 
     <script src="js/navbar.js"></script>
   </body>

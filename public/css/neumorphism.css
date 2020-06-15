@@ -6,10 +6,12 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 1100px;
+  width: 100%;
+  max-width: 1100px;
   margin-top: 50px;
   margin-bottom: 50px;
   transition: all 0.2s ease-in-out;
+  cursor: default;
 }
 .cardContainer .card {
   width: 320px;
@@ -31,7 +33,9 @@
   text-align: center;
 }
 .cardContainer .card .imgBx img {
-  max-width: 120px;
+  height: 100px;
+  width: auto;
+  margin-bottom: 20px;
 }
 .cardContainer .card .contentBx {
   position: relative;
@@ -83,6 +87,7 @@
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
+  cursor: default;
 }
 .listContainer .card {
   width: 320px;
@@ -460,7 +465,7 @@
   font-size: 16px;
   border-radius: 320px;
   padding: 16px;
-  background-color: #ebecf0;
+  background-color: whitesmoke;
 }
 
 .contactLabel {
@@ -494,7 +499,7 @@
   font-size: 16px;
   border-radius: 30px;
   padding: 16px;
-  background-color: #ebecf0;
+  background-color: whitesmoke;
 }
 
 .contactInput:focus {
@@ -551,7 +556,7 @@
 .contactButton.contactRed {
   display: block;
   width: 100%;
-  color: #ae1100;
+  color: #2f89fc;
 }
 
 .contactLabelText {
