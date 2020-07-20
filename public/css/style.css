@@ -4771,6 +4771,20 @@ input[type='button'].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+
+@media (max-width: 768px) {
+  #lastCardMenuHamburger {
+    margin-top: 20px;
+    
+  }
+}
+
+@media (min-width: 768px) {
+  #lastCardMenuHamburger {
+    margin-left: 10px;
+  }
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
