@@ -129,7 +129,9 @@
 
                 <div class="navCardContainer">
                   <li class="card">
-                    <a href="/contact" style="color: black;">Contact</a>
+                    <a href="/contact" style="color: black;"
+                      >{{text.contact}}</a
+                    >
                   </li>
                 </div>
 
@@ -171,11 +173,8 @@
               <div
                 class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated"
               >
-                <span
-                  >Trebate web, mobile, desktop aplikaciju? Ili software skrojen
-                  po Vasoj zelji?</span
-                >
-                <h2>Tu smo za Vas</h2>
+                <span>{{text.hero[0]}}</span>
+                <h2>{{text.hero[1]}}</h2>
               </div>
             </div>
             <div class="row justify-content-center mb-5 pb-5">
@@ -190,10 +189,10 @@
               >
                 <div class="linkCardContainer">
                   <li class="card" style="margin-bottom: 30px;">
-                    <a href="/contact">Kontaktirajte nas</a>
+                    <a href="/contact">{{text.hero[2]}}</a>
                   </li>
                 </div>
-                <h2>Vas EXElent</h2>
+                <h2>{{text.hero[3]}}</h2>
               </div>
             </div>
           </div>
@@ -219,10 +218,10 @@
 
                     <div class="linkCardContainer">
                       <li class="card" style="margin-bottom: 30px;">
-                        <a href="/isa-erp">Sta nudimo?</a>
+                        <a href="/isa-erp">{{text.ici[2]}}</a>
                       </li>
                     </div>
-                    <ul class="ftco-footer-social list-unstyled mt-4">
+                    <!-- <ul class="ftco-footer-social list-unstyled mt-4">
                       <li>
                         <a href="#"><span class="icon-twitter"></span></a>
                       </li>
@@ -232,10 +231,11 @@
                       <li>
                         <a href="#"><span class="icon-instagram"></span></a>
                       </li>
-                    </ul>
+                    </ul> -->
                     <h5>{{text.ici[3]}}</h5>
-                    <p>Email: <a href="#">email@email.com</a></p>
-                    <p>{{text.ici[4]}}: <a href="#">(123)-456-789</a></p>
+                    <p>Email: <a href="#">exelent@bih.net.ba</a></p>
+                    <p>Email: <a href="#">exelent.maglaj@gmail.com</a></p>
+                    <p>{{text.ici[4]}}: <a href="#">+387 61 637 475</a></p>
                   </div>
                 </div>
               </div>
@@ -247,8 +247,8 @@
           <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
               <div class="col-md-7 text-center heading-section ftco-animate">
-                <span>Šta radimo?</span>
-                <h2>Naše usluge</h2>
+                <span>{{text.services[0]}}</span>
+                <h2>{{text.services[1]}}</h2>
               </div>
             </div>
             <div class="row">
@@ -258,9 +258,9 @@
                     <img src="icons/multiple-layers.svg" />
                   </div>
                   <div class="contentBx boldText">
-                    <h3>Mobilne Aplikacije</h3>
-                    <h3>Web Aplikacije</h3>
-                    <h3>Desktop Aplikacije</h3>
+                    <h3>{{text.services[2].firstSlide}}</h3>
+                    <h3>{{text.services[2].secondSlide}}</h3>
+                    <h3>{{text.services[2].thirdSlide}}</h3>
                   </div>
                 </div>
                 <div class="card">
@@ -268,9 +268,9 @@
                     <img src="icons/cog.svg" />
                   </div>
                   <div class="contentBx boldText">
-                    <h3>Prvoklasni Racunovodstveni Softver</h3>
-                    <h3>Baze Podataka</h3>
-                    <h3>All-In-One Sistem</h3>
+                    <h3>{{text.services[3].firstSlide}}</h3>
+                    <h3>{{text.services[3].secondSlide}}</h3>
+                    <h3>{{text.services[3].thirdSlide}}</h3>
                   </div>
                 </div>
                 <div class="card">
@@ -279,8 +279,7 @@
                   </div>
                   <div class="contentBx boldText">
                     <h3>
-                      Izrada aplikacija i programa po zelji, na platformi Vaseg
-                      odabira
+                      {{text.services[4].firstSlide}}
                     </h3>
                   </div>
                 </div>

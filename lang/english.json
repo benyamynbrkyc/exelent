@@ -1,15 +1,10 @@
 {
-  "navbar": [
-    "Home",
-    "Resume",
-    "Services",
-    "Portfolio",
-    "Blog",
-    "Contact"
-  ],
+  "contact": "Contact",
   "hero": [
-    "Hello! We are",
-    "Our work is always"
+    "Need a Web, Mobile or Desktop app? Custom software tailored to your needs?",
+    "We're here for You",
+    "Contact Us",
+    "Your EXElent"
   ],
   "ici": [
     "Hello! We are EXElent",
@@ -17,5 +12,22 @@
     "What do we offer?",
     "Contact Us!",
     "Phone"
+  ],
+  "services": [
+    "What We Do",
+    "Our Services",
+    {
+      "firstSlide": "Mobile Apps",
+      "secondSlide": "Web Apps",
+      "thirdSlide": "Desktop Apps"
+    },
+    {
+      "firstSlide": "Enterprise Level Software",
+      "secondSlide": "Databases",
+      "thirdSlide": "All-In-One Systems"
+    },
+    {
+      "firstSlide": "Your Custom Software Development, on platforms of Your choosing"
+    }
   ]
 }

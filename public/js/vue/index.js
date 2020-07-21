@@ -3,12 +3,24 @@
 new Vue({
   el: '#app',
   data: {
-    text: { navbar: [undefined], hero: [undefined], ici: [undefined] },
+    text: {
+      contact: '',
+      hero: [undefined],
+      ici: [undefined],
+      services: [undefined]
+    },
     currentYear: new Date().getFullYear()
   },
   beforeCreate: async function () {
     let bosObj = await axios.get('/translate/bos')
     this.text = bosObj.data
+  },
+  created() {
+    window.addEventListener('keydown', (e) => {
+      if (e.key == 'Escape') {
+        this.langSwitch()
+      }
+    })
   },
   methods: {
     async langSwitch() {

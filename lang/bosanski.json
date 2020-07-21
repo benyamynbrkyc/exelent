@@ -1,15 +1,10 @@
 {
-  "navbar": [
-    "Home",
-    "Rezime",
-    "Servisi",
-    "Portfolio",
-    "Blog",
-    "Kontakt"
-  ],
+  "contact": "Kontakt",
   "hero": [
-    "Zdravo! Mi smo",
-    "Naš rad je uvijek"
+    "Trebate web, mobile ili desktop aplikaciju? Software skrojen po Vašoj želji?",
+    "Tu smo za Vas",
+    "Kontaktirajte nas",
+    "Vaš EXElent"
   ],
   "ici": [
     "Zdravo! Mi smo EXElent",
@@ -17,5 +12,22 @@
     "Šta nudimo?",
     "Kontaktirajte nas!",
     "Telefon"
+  ],
+  "services": [
+    "Šta radimo?",
+    "Naše usluge",
+    {
+      "firstSlide": "Mobilne Aplikacije",
+      "secondSlide": "Web Aplikacije",
+      "thirdSlide": "Desktop Aplikacije"
+    },
+    {
+      "firstSlide": "Prvoklasni Računovodstveni Softver",
+      "secondSlide": "Baze Podataka",
+      "thirdSlide": "All-In-One Sistem"
+    },
+    {
+      "firstSlide": "Izrada aplikacija i programa po želji, na platformama Vašeg odabira"
+    }
   ]
 }
