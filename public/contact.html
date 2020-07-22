@@ -72,225 +72,253 @@
     </script>
   </head>
   <body>
-    <div class="KW_progressContainer">
-      <div class="KW_progressBar"></div>
-    </div>
-    <div class="page">
-      <nav class="navbar">
-        <div class="navContainer">
-          <div class="navbar-header">
-            <div class="navButtonCardContainer">
-              <button class="navbar-toggler card" data-toggle="open-navbar1">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
+    <div id="app">
+      <div class="KW_progressContainer">
+        <div class="KW_progressBar"></div>
+      </div>
+      <div class="page">
+        <nav class="navbar">
+          <div class="navContainer">
+            <div class="navbar-header">
+              <div class="navButtonCardContainer">
+                <button class="navbar-toggler card" data-toggle="open-navbar1">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+
+              <a href="/">
+                <img
+                  id="nav-logo"
+                  src="images/Logo2_mali.png"
+                  height="30px"
+                  width="auto"
+                />
+              </a>
             </div>
 
-            <a href="/">
-              <img
-                id="nav-logo"
-                src="images/Logo2_mali.png"
-                height="30px"
-                width="auto"
-              />
-            </a>
+            <div class="navbar-menu" id="open-navbar1">
+              <ul class="navbar-nav">
+                <div class="navCardContainer">
+                  <li class="card" id="navCard">
+                    <a href="/" style="color: black;">Home</a>
+                  </li>
+                </div>
+
+                <div class="navCardContainer">
+                  <li class="card" id="navCard">
+                    <a href="/isa-erp" style="color: black;">ISA-ERP</a>
+                  </li>
+                </div>
+
+                <div class="navCardContainer">
+                  <li class="card">
+                    <a href="/contact">{{text.contact}}</a>
+                  </li>
+                </div>
+                <div style="text-align: center;">
+                  <p
+                    style="
+                      display: inline-block;
+                      padding-top: 10.5px;
+                      text-align: center;
+                    "
+                    id="lastCardMenuHamburger"
+                  >
+                    Language:
+                    <span
+                      @click="langSwitch()"
+                      id="langIndicator"
+                      style="
+                        font-style: italic;
+                        color: #2f89fc;
+                        cursor: pointer;
+                      "
+                      ref="langIndicator"
+                      >BA</span
+                    >
+                  </p>
+                </div>
+              </ul>
+            </div>
           </div>
+        </nav>
 
-          <div class="navbar-menu" id="open-navbar1">
-            <ul class="navbar-nav">
-              <div class="navCardContainer">
-                <li class="card" id="navCard">
-                  <a href="/" style="color: black;">Home</a>
-                </li>
-              </div>
-
-              <div class="navCardContainer">
-                <li class="card" id="navCard">
-                  <a href="/isa-erp" style="color: black;">ISA-ERP</a>
-                </li>
-              </div>
-
-              <div class="navCardContainer">
-                <li class="card">
-                  <a href="/contact">Contact</a>
-                </li>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <section class="ftco-section">
-        <div class="container">
-          <div class="row no-gutters">
-            <div
-              class="block-3 d-md-flex ftco-animate"
-              data-scrollax-parent="true"
-              style="width: 100%;"
-            >
-              <a
-                class="image d-flex justify-content-center align-items-center"
-                style="
-                  background-image: url('images/chat.png');
-                  background-size: contain;
-                "
-                data-scrollax=" properties: { translateY: '-30%'}"
+        <section class="ftco-section">
+          <div class="container">
+            <div class="row no-gutters">
+              <div
+                class="block-3 d-md-flex ftco-animate"
+                data-scrollax-parent="true"
+                style="width: 100%;"
               >
-              </a>
-              <div class="text">
-                <h4 class="subheading">Kontaktirajte nas!</h4>
-                <h2 class="heading">
-                  <div id="emailShortcut">
+                <a
+                  class="image d-flex justify-content-center align-items-center"
+                  style="
+                    background-image: url('images/chat.png');
+                    background-size: contain;
+                  "
+                  data-scrollax=" properties: { translateY: '-30%'}"
+                >
+                </a>
+                <div class="text">
+                  <h4 class="subheading">{{text.hero[0]}}</h4>
+                  <h2 class="heading">
                     <a
-                      >Posaljite nam
+                      >{{text.hero[1]}}
                       <span
                         style="cursor: pointer; color: #2f89fc;"
                         @click="scrollToContactForm()"
-                        >e-mail</span
+                        >{{text.hero[2]}}</span
                       >
-                      ili direktnu poruku preko Messenger Chat-a.</a
+                      {{text.hero[3]}}</a
                     >
+                  </h2>
+                  <div class="linkCardContainer">
+                    <li class="card">
+                      <a>Viteška bb</a>
+                    </li>
                   </div>
-                </h2>
-                <div class="linkCardContainer">
-                  <li class="card">
-                    <a>Viteska bb</a>
-                  </li>
-                </div>
-                <div class="linkCardContainer">
-                  <li class="card">
-                    <a>123 - 456 - 789</a>
-                  </li>
-                </div>
-                <div class="linkCardContainer">
-                  <li class="card">
-                    <a>email@email.com</a>
-                  </li>
+                  <div class="linkCardContainer">
+                    <li class="card">
+                      <a>+387 61 637 475</a>
+                    </li>
+                  </div>
+                  <div class="linkCardContainer">
+                    <li class="card">
+                      <a>exelent@bih.net.ba</a>
+                    </li>
+                  </div>
+                  <div class="linkCardContainer">
+                    <li class="card">
+                      <a>exelent.maglaj@gmail.com</a>
+                    </li>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="block-3 d-md-flex ftco-animate"
-              data-scrollax-parent="true"
-              style="width: 100%; margin-top: 100px;"
-            >
-              <form class="contactForm" action="/email" method="post">
-                <p class="contactLabelText">Name</p>
-                <label class="contactLabel">
-                  <input
-                    style="color: black;"
-                    class="contactInput"
-                    type="text"
-                    minlength="1"
-                    maxlength="30"
-                    name="name"
-                    placeholder="Your name"
-                    required
-                  />
-                </label>
-                <p class="contactLabelText">Email Address</p>
-                <label class="contactLabel">
-                  <input
-                    required
-                    class="contactInput"
-                    minlength="10"
-                    type="email"
-                    placeholder="Your email"
-                    name="email"
-                  />
-                </label>
-                <p class="contactLabelText">Subject</p>
-                <label class="contactLabel">
-                  <input
-                    required
-                    class="contactInput"
-                    type="text"
-                    minlength="1"
-                    placeholder="Subject"
-                    name="subject"
-                  />
-                </label>
-                <p class="contactLabelText">Message</p>
-                <label class="contactLabel">
-                  <textarea
-                    required
-                    minlength="5"
-                    class="contactInputTextArea"
-                    cols="10"
-                    rows="7"
-                    wrap="soft"
-                    placeholder="Your message"
-                    name="text"
-                  ></textarea>
-                </label>
-                <div class="linkCardContainer">
-                  <li class="card">
-                    <button id="submitEmailForm" type="submit">
-                      Send
-                    </button>
-                  </li>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="ftco-footer ftco-bg-dark ftco-section" id="footer">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-md-5 text-center">
-              <div class="ftco-footer-widget">
-                <h2 class="mb-3">Kontaktirajte nas</h2>
-                <p class="h3 email"><a href="#">email@email.com</a></p>
+              <div
+                class="block-3 d-md-flex ftco-animate"
+                data-scrollax-parent="true"
+                style="width: 100%; margin-top: 100px;"
+              >
+                <form class="contactForm" action="/email" method="post">
+                  <p class="contactLabelText">{{text.emailForm[0]}}</p>
+                  <label class="contactLabel">
+                    <input
+                      style="color: black;"
+                      class="contactInput"
+                      type="text"
+                      minlength="1"
+                      maxlength="30"
+                      name="name"
+                      required
+                    />
+                  </label>
+                  <p class="contactLabelText">{{text.emailForm[1]}}</p>
+                  <label class="contactLabel">
+                    <input
+                      required
+                      class="contactInput"
+                      minlength="10"
+                      type="email"
+                      name="email"
+                    />
+                  </label>
+                  <p class="contactLabelText">{{text.emailForm[2]}}</p>
+                  <label class="contactLabel">
+                    <input
+                      required
+                      class="contactInput"
+                      type="text"
+                      minlength="1"
+                      name="subject"
+                    />
+                  </label>
+                  <p class="contactLabelText">{{text.emailForm[3]}}</p>
+                  <label class="contactLabel">
+                    <textarea
+                      required
+                      minlength="5"
+                      class="contactInputTextArea"
+                      cols="10"
+                      rows="7"
+                      wrap="soft"
+                      name="text"
+                    ></textarea>
+                  </label>
+                  <div class="linkCardContainer">
+                    <li class="card">
+                      <button id="submitEmailForm" type="submit">
+                        {{text.emailForm[4]}}
+                      </button>
+                    </li>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <p>
-                {{ currentYear }} Sva prava zadržana | Development by
-                <i
-                  class="fa fa-instagram"
-                  aria-hidden="true"
-                  style="color: #fb3958;"
-                ></i>
-                <a
-                  style="color: #fb3958;"
-                  href="https://www.instagram.com/benyamynbrkyc/"
-                  target="_blank"
-                  >benyamynbrkyc</a
-                >
-              </p>
+        </section>
+
+        <footer class="ftco-footer ftco-bg-dark ftco-section" id="footer">
+          <div class="container">
+            <div class="row mb-5 justify-content-center">
+              <div class="col-md-5 text-center">
+                <div class="ftco-footer-widget">
+                  <h2 class="mb-3">{{text.contactFooter[0]}}</h2>
+                  <p>Email: <a href="#">exelent@bih.net.ba</a></p>
+                  <p>Email: <a href="#">exelent.maglaj@gmail.com</a></p>
+                  <p>
+                    {{text.contactFooter[1]}}: <a href="#">+387 61 637 475</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>
+                  {{ currentYear }} | Development by
+                  <i
+                    class="fa fa-instagram"
+                    aria-hidden="true"
+                    style="color: #fb3958;"
+                  ></i>
+                  <a
+                    style="color: #fb3958;"
+                    href="https://www.instagram.com/benyamynbrkyc/"
+                    target="_blank"
+                    >benyamynbrkyc</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
 
-      <!-- loader -->
-      <div id="ftco-loader" class="show fullscreen">
-        <svg class="circular" width="48px" height="48px">
-          <circle
-            class="path-bg"
-            cx="24"
-            cy="24"
-            r="22"
-            fill="none"
-            stroke-width="4"
-            stroke="#eeeeee"
-          />
-          <circle
-            class="path"
-            cx="24"
-            cy="24"
-            r="22"
-            fill="none"
-            stroke-width="4"
-            stroke-miterlimit="10"
-            stroke="#2f89fc"
-          />
-        </svg>
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen">
+          <svg class="circular" width="48px" height="48px">
+            <circle
+              class="path-bg"
+              cx="24"
+              cy="24"
+              r="22"
+              fill="none"
+              stroke-width="4"
+              stroke="#eeeeee"
+            />
+            <circle
+              class="path"
+              cx="24"
+              cy="24"
+              r="22"
+              fill="none"
+              stroke-width="4"
+              stroke-miterlimit="10"
+              stroke="#2f89fc"
+            />
+          </svg>
+        </div>
       </div>
     </div>
     <script src="js/vue/vue.js"></script>

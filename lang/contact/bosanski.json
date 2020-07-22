@@ -1,0 +1,20 @@
+{
+  "contact": "Kontakt",
+  "hero": [
+    "Kontaktirajte nas!",
+    "Pošaljite nam",
+    "e-mail",
+    "ili direktnu poruku preko Messenger Chat-a."
+  ],
+  "emailForm": [
+    "Ime",
+    "Email",
+    "Naslov",
+    "Poruka",
+    "Pošalji"
+  ],
+  "contactFooter": [
+    "Kontaktirajte Nas",
+    "Telefon"
+  ]
+}

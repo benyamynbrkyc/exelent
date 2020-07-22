@@ -186,6 +186,7 @@
             >
               <div
                 class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated"
+                style="margin-bottom: 100px;"
               >
                 <div class="linkCardContainer">
                   <li class="card" style="margin-bottom: 30px;">
@@ -199,7 +200,7 @@
         </section>
         <!-- END hero -->
 
-        <section class="ftco-section about-section">
+        <section class="ftco-section about-section" style="margin-top: 150px;">
           <div class="container">
             <div class="row d-flex" data-scrollax-parent="true">
               <div
@@ -293,7 +294,7 @@
             <div class="row justify-content-center mb-5 pb-5">
               <div class="col-md-7 text-center heading-section ftco-animate">
                 <span>Portfolio</span>
-                <h2>Prvoklasni Enterprise Softver</h2>
+                <h2>{{text.portfolio[0].intro[0]}}</h2>
               </div>
             </div>
             <div class="row no-gutters">
@@ -312,30 +313,30 @@
                   <h4 class="subheading">Enterprise resource planning</h4>
                   <h2 class="heading">
                     <a href="portfolio-single.html"
-                      >Najbolji All-in-one racunovodstveni sistem</a
+                      >{{text.portfolio[0].intro[1]}}</a
                     >
                   </h2>
                   <p>
-                    Testiran na bazama podataka gdje je velicina jedne datoteke
-                    preko 1.000.000.000 zapisa, ISA-ERP je odlicna solucija za
-                    sve biznise -
-                    <span style="font-weight: bold;">male i velike.</span>
+                    {{text.portfolio[0].intro[2]}}
+                    <span style="font-weight: bold;"
+                      >{{text.portfolio[0].intro[3]}}</span
+                    >
                   </p>
                   <div class="linkCardContainer">
                     <li class="card">
-                      <a href="/isa-erp">Saznajte Vise</a>
+                      <a href="/isa-erp">{{text.portfolio[0].intro[4]}}</a>
                     </li>
                   </div>
                 </div>
               </div>
               <hr class="highlighter-top" />
               <h4 style="text-align: center; width: 100%; font-size: 1.25em;">
-                Svi moduli i svi elementi se nalaze u jednom programu i
-                međusobno su povezani. <br />
-                Podaci uneseni u jednom modulu su odmah i u drugom modulu na
-                raspolaganju, tako da
-                <span style="font-weight: bold;">nema</span> duplog unosa
-                podataka.
+                {{text.portfolio[1].paragraphDiv[0]}}<br />
+                {{text.portfolio[1].paragraphDiv[1]}}
+                <span style="font-weight: bold;"
+                  >{{text.portfolio[1].paragraphDiv[2]}}</span
+                >
+                {{text.portfolio[1].paragraphDiv[3]}}
               </h4>
               <hr class="highlighter-bot" />
               <div
@@ -353,23 +354,28 @@
                 >
                 </a>
                 <div class="text order-1">
-                  <h4 class="subheading">Pristupacnost</h4>
+                  <h4 class="subheading">
+                    {{text.portfolio[2].accessibility[0]}}
+                  </h4>
                   <h2 class="heading">
                     <a href="#"
-                      >Ne zelite komplikovane procedure tipkanja u tabele?
+                      >{{text.portfolio[2].accessibility[1]}}
                       <br />
-                      Ni mi.</a
+                      {{text.portfolio[2].accessibility[2]}}</a
                     >
                   </h2>
                   <p>
-                    Sa ISA-ERP softverskim paketom korisnicko iskustvo stavljamo
-                    na
-                    <span style="font-weight: bold;">prvo</span> mjesto.
-                    Racunovodstvo ne mora biti dosadno.
+                    {{text.portfolio[2].accessibility[3]}}
+                    <span style="font-weight: bold;"
+                      >{{text.portfolio[2].accessibility[4]}}</span
+                    >
+                    {{text.portfolio[2].accessibility[5]}}
                   </p>
                   <div class="linkCardContainer">
                     <li class="card">
-                      <a href="/isa-erp">Saznajte Vise</a>
+                      <a href="/isa-erp"
+                        >{{text.portfolio[2].accessibility[6]}}</a
+                      >
                     </li>
                   </div>
                 </div>
@@ -389,22 +395,22 @@
                 >
                 </a>
                 <div class="text">
-                  <h4 class="subheading">Mobilna Aplikacija</h4>
+                  <h4 class="subheading">{{text.portfolio[3].mobileApp[0]}}</h4>
                   <h2 class="heading">
                     <a href="portfolio-single.html"
-                      >Kompletna kontrola s vaseg pametnog uredjaja.</a
+                      >{{text.portfolio[3].mobileApp[1]}}</a
                     >
                   </h2>
                   <p>
-                    ISA-ERP je u potpunosti prilagodjen vasem mobilnom uredjaju
-                    tako da mozete u
-                    <span style="font-weight: bold;">svakom momentu</span>,
-                    <span style="font-weight: bold;">na svakoj lokaciji</span>
-                    da pristupite vasim podacima.
+                    {{text.portfolio[3].mobileApp[2]}}
+                    <span style="font-weight: bold;"
+                      >{{text.portfolio[3].mobileApp[3]}}</span
+                    >
+                    {{text.portfolio[3].mobileApp[4]}}
                   </p>
                   <div class="linkCardContainer">
                     <li class="card">
-                      <a href="/isa-erp">Saznajte Vise</a>
+                      <a href="/isa-erp">{{text.portfolio[3].mobileApp[5]}}</a>
                     </li>
                   </div>
                 </div>
@@ -424,22 +430,19 @@
                 >
                 </a>
                 <div class="text order-1">
-                  <h4 class="subheading">Sigurnost</h4>
+                  <h4 class="subheading">{{text.portfolio[4].security[0]}}</h4>
                   <h2 class="heading">
-                    <a href="#"
-                      >Automatska enkripcija za maksimalnu sigurnost.</a
-                    >
+                    <a href="#">{{text.portfolio[4].security[1]}}</a>
                   </h2>
                   <p>
-                    Za sigurnost, integritet i arhiviranje podataka brine se
-                    sistem za upravljanje bazama podataka. Razvijen sa posebnim
-                    akcentom na sigurnost, tako da manje brinete o podacima, a
-                    vise o
-                    <span style="font-weight: bold;">rezultatima</span>.
+                    {{text.portfolio[4].security[2]}}
+                    <span style="font-weight: bold;"
+                      >{{text.portfolio[4].security[3]}}</span
+                    >.
                   </p>
                   <div class="linkCardContainer">
                     <li class="card">
-                      <a href="/isa-erp">Saznajte Vise</a>
+                      <a href="/isa-erp">{{text.portfolio[4].security[4]}}</a>
                     </li>
                   </div>
                 </div>
@@ -459,20 +462,19 @@
                 >
                 </a>
                 <div class="text">
-                  <h4 class="subheading">Elektronsko Poslovanje</h4>
+                  <h4 class="subheading">{{text.portfolio[5].eBanking[0]}}</h4>
                   <h2 class="heading">
-                    <a href="#">Potpuna integracija sa programima banaka.</a>
+                    <a href="#">{{text.portfolio[5].eBanking[1]}}</a>
                   </h2>
                   <p>
-                    ISA-ERP cini elektronsko poslovanje
-                    <span style="font-weight: bold;">laksim nego ikada</span>.
-                    Potpuno sinhronizovana komunikacija sa programima svih
-                    banaka, import platnih naloga, te export u Word, Excel, PDF
-                    i druge formate.
+                    {{text.portfolio[5].eBanking[2]}}
+                    <span style="font-weight: bold;"
+                      >{{text.portfolio[5].eBanking[3]}}</span
+                    >. {{text.portfolio[5].eBanking[4]}}
                   </p>
                   <div class="linkCardContainer">
                     <li class="card">
-                      <a href="/isa-erp">Saznajte Vise</a>
+                      <a href="/isa-erp">{{text.portfolio[5].eBanking[5]}}</a>
                     </li>
                   </div>
                 </div>
@@ -492,20 +494,19 @@
                 >
                 </a>
                 <div class="text order-1">
-                  <h4 class="subheading">Mreza</h4>
+                  <h4 class="subheading">{{text.portfolio[6].network[0]}}</h4>
                   <h2 class="heading">
-                    <a href="#">Rad u mrezi - lokalna i udaljena.</a>
+                    <a href="#">{{text.portfolio[6].network[1]}}</a>
                   </h2>
                   <p>
-                    <span style="font-weight: bold;">Neograničen broj</span>
-                    istovremenih korisnika koji pristupaju istoj bazi podataka
-                    iz bilo kog modula. Potpuna integracija pomoćnih
-                    knjigovodstava sa glavnom knjigom (Podatak unesen na jednom
-                    mjestu koriste svi programski moduli).
+                    <span style="font-weight: bold;"
+                      >{{text.portfolio[6].network[2]}}</span
+                    >
+                    {{text.portfolio[6].network[3]}}
                   </p>
                   <div class="linkCardContainer">
                     <li class="card">
-                      <a href="/isa-erp">Saznajte Vise</a>
+                      <a href="/isa-erp">{{text.portfolio[6].network[4]}}</a>
                     </li>
                   </div>
                 </div>
@@ -519,15 +520,17 @@
             <div class="row justify-content-center mb-5 pb-5">
               <div class="col-md-7 text-center heading-section ftco-animate">
                 <span>Portfolio</span>
-                <h2>Dugogodišnje iskustvo</h2>
+                <h2>{{text.portfolio[7].yearsOfExperience[0]}}</h2>
               </div>
             </div>
             <div class="row d-flex justify-content-start">
               <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
-                    <span class="ftco-label">Klijenti</span>
-                    <strong class="number" data-number="420">0</strong>
+                    <span class="ftco-label"
+                      >{{text.portfolio[7].yearsOfExperience[1]}}</span
+                    >
+                    <strong class="number" data-number="100">0</strong>
                   </div>
                 </div>
               </div>
@@ -536,7 +539,9 @@
               <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
-                    <span class="ftco-label">Linije koda</span>
+                    <span class="ftco-label"
+                      >{{text.portfolio[7].yearsOfExperience[2]}}</span
+                    >
                     <strong class="number" data-number="100000">0</strong>
                   </div>
                 </div>
@@ -546,8 +551,10 @@
               <div class="col-md-5 counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
-                    <span class="ftco-label">Šolje kafe</span>
-                    <strong class="number" data-number="1000">0</strong>
+                    <span class="ftco-label"
+                      >{{text.portfolio[7].yearsOfExperience[3]}}</span
+                    >
+                    <strong class="number" data-number="1000000">0</strong>
                   </div>
                 </div>
               </div>
@@ -560,15 +567,17 @@
             <div class="row mb-5 justify-content-center">
               <div class="col-md-5 text-center">
                 <div class="ftco-footer-widget">
-                  <h2 class="mb-3">Kontaktirajte nas</h2>
-                  <p class="h3 email"><a href="#">email@email.com</a></p>
+                  <h2 class="mb-3">{{text.contactFooter[0]}}</h2>
+                  <p>Email: <a href="#">exelent@bih.net.ba</a></p>
+                  <p>Email: <a href="#">exelent.maglaj@gmail.com</a></p>
+                  <p>{{text.ici[4]}}: <a href="#">+387 61 637 475</a></p>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 text-center">
                 <p>
-                  {{ currentYear }} Sva prava zadržana | Development by
+                  {{ currentYear }} | Development by
                   <i
                     class="fa fa-instagram"
                     aria-hidden="true"

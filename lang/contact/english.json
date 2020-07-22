@@ -1,0 +1,20 @@
+{
+  "contact": "Contact",
+  "hero": [
+    "Contact us!",
+    "Send us an",
+    "e-mail",
+    "or a direct message through Messenger Chat."
+  ],
+  "emailForm": [
+    "Name",
+    "Email",
+    "Subject",
+    "Message",
+    "Send"
+  ],
+  "contactFooter": [
+    "Contact Us",
+    "Phone"
+  ]
+}

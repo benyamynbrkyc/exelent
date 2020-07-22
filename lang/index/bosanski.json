@@ -1,0 +1,112 @@
+{
+  "contact": "Kontakt",
+  "hero": [
+    "Trebate web, mobile ili desktop aplikaciju? Software skrojen po Vašoj želji?",
+    "Tu smo za Vas",
+    "Kontaktirajte nas",
+    "Vaš EXElent"
+  ],
+  "ici": [
+    "Zdravo! Mi smo EXElent",
+    "Nudimo najbolji enterprise softver na tržištu. Ponosimo se našim radom i sigurni smo da imamo pravi proizvod za Vas.",
+    "Šta nudimo?",
+    "Kontaktirajte nas!",
+    "Telefon"
+  ],
+  "services": [
+    "Šta radimo?",
+    "Naše usluge",
+    {
+      "firstSlide": "Mobilne Aplikacije",
+      "secondSlide": "Web Aplikacije",
+      "thirdSlide": "Desktop Aplikacije"
+    },
+    {
+      "firstSlide": "Vodeći Računovodstveni Softver",
+      "secondSlide": "Baze Podataka",
+      "thirdSlide": "All-In-One Sistem"
+    },
+    {
+      "firstSlide": "Izrada aplikacija i programa po želji, na platformama Vašeg odabira"
+    }
+  ],
+  "portfolio": [
+    {
+      "intro": [
+        "Vodeći Računovodstveni Software",
+        "Najbolji All-In-One racunovodstveni sistem",
+        "Testiran na bazama podataka gdje je veličina jedne datoteke preko 1.000.000.000 zapisa, ISA-ERP je odlična solucija za sve biznise -",
+        "velike i male.",
+        "Saznajte Više"
+      ]
+    },
+    {
+      "paragraphDiv": [
+        "Svi moduli i svi elementi se nalaze u jednom programu i međusobno su povezani.",
+        "Podaci uneseni u jednom modulu su odmah i u drugom modulu na raspolaganju, tako da",
+        " nema",
+        " duplog unosa podataka."
+      ]
+    },
+    {
+      "accessibility": [
+        "Pristupačnost",
+        "Ne želite komplikovane procedure tipkanja i tabele?",
+        "Ni mi.",
+        "Sa ISA-ERP softverskim paketom korisničko iskustvo stavljamo na",
+        " prvo ",
+        "mjesto. Računovodstvo ne mora biti dosadno.",
+        "Saznajte Više"
+      ]
+    },
+    {
+      "mobileApp": [
+        "Mobilna Aplikacija",
+        "Kompletna kontrola s vašeg pametnog uređaja.",
+        "ISA-ERP je u potpunosti prilagođen vašem mobilnom uređaju tako da možete",
+        "da pristupite vašim podacima",
+        "u svakom momentu, na svakoj lokaciji.",
+        "Saznajte Više"
+      ]
+    },
+    {
+      "security": [
+        "Sigurnost",
+        "Automatska enkripcija za maksimalnu sigurnost.",
+        "Za sigurnost, integritet i arhiviranje podataka brine se sistem za upravljanje bazama podataka. Razvijen sa posebnim akcentom na sigurnost, tako da manje brinete o podacima, a vise o",
+        "rezultatima",
+        "Saznajte Više"
+      ]
+    },
+    {
+      "eBanking": [
+        "Elektronsko Poslovanje",
+        "Potpuna integracija sa programima banaka.",
+        "ISA-ERP čini elektronsko poslovanje",
+        "lakšim nego ikada",
+        "Potpuno sinhronizovana komunikacija sa programima svih banaka, import platnih naloga, te export u Word, Excel, PDF i druge formate.",
+        "Saznajte Više"
+      ]
+    },
+    {
+      "network": [
+        "Mreža",
+        "Rad u mreži - lokalna i udaljena.",
+        "Neograničen broj",
+        "istovremenih korisnika koji pristupaju istoj bazi podataka iz bilo kog modula. Potpuna integracija pomoćnih knjigovodstava sa glavnom knjigom (Podatak unesen na jednom mjestu koriste svi programski moduli).",
+        "Saznajte Više"
+      ]
+    },
+    {
+      "yearsOfExperience": [
+        "Dugogodišnje iskustvo",
+        "Klijenti",
+        "Linija koda",
+        "Šolja kafe"
+      ]
+    }
+  ],
+  "contactFooter": [
+    "Kontaktirajte Nas"
+  ]
+}

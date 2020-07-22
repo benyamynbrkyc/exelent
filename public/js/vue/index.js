@@ -7,12 +7,14 @@ new Vue({
       contact: '',
       hero: [undefined],
       ici: [undefined],
-      services: [undefined]
+      services: [undefined],
+      portfolio: [undefined],
+      contact: [undefined]
     },
     currentYear: new Date().getFullYear()
   },
   beforeCreate: async function () {
-    let bosObj = await axios.get('/translate/bos')
+    let bosObj = await axios.get('/translate/bos/index')
     this.text = bosObj.data
   },
   created() {
@@ -25,11 +27,11 @@ new Vue({
   methods: {
     async langSwitch() {
       if (this.$refs.langIndicator.innerText == 'BA') {
-        let engObj = await axios.get('/translate/eng')
+        let engObj = await axios.get('/translate/eng/contact')
         this.text = engObj.data
         this.$refs.langIndicator.innerText = 'EN'
       } else {
-        let bosObj = await axios.get('/translate/bos')
+        let bosObj = await axios.get('/translate/bos/contact')
         this.text = bosObj.data
         this.$refs.langIndicator.innerText = 'BA'
       }

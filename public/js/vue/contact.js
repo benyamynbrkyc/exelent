@@ -1,7 +1,36 @@
 new Vue({
-  el: '#emailShortcut',
-  data: { currentYear: new Date().getFullYear() },
+  el: '#app',
+  data: {
+    text: {
+      contact: '',
+      hero: [undefined],
+      emailForm: [undefined]
+    },
+    currentYear: new Date().getFullYear()
+  },
+  beforeCreate: async function () {
+    let bosObj = await axios.get('/translate/bos/contact')
+    this.text = bosObj.data
+  },
+  created() {
+    window.addEventListener('keydown', (e) => {
+      if (e.key == 'Escape') {
+        this.langSwitch()
+      }
+    })
+  },
   methods: {
+    async langSwitch() {
+      if (this.$refs.langIndicator.innerText == 'BA') {
+        let engObj = await axios.get('/translate/eng/contact')
+        this.text = engObj.data
+        this.$refs.langIndicator.innerText = 'EN'
+      } else {
+        let bosObj = await axios.get('/translate/bos/contact')
+        this.text = bosObj.data
+        this.$refs.langIndicator.innerText = 'BA'
+      }
+    },
     scrollToContactForm() {
       if (window.innerHeight < 900) {
         if (window.innerHeight < 300) {
@@ -14,6 +43,16 @@ new Vue({
     }
   }
 })
+
+// new Vue({
+//   el: '#emailShortcut',
+//   data: {
+//     currentYear: new Date().getFullYear()
+//   },
+//   methods: {
+
+//   }
+// })
 
 new Vue({
   el: '#footer',
