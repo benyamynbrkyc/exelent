@@ -45,7 +45,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="js/vue/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
     <script>
@@ -122,8 +122,33 @@
 
                 <div class="navCardContainer">
                   <li class="card">
-                    <a href="/contact" style="color: black;">Contact</a>
+                    <a href="/contact" style="color: black;"
+                      >{{text.contact}}</a
+                    >
                   </li>
+                </div>
+                <div style="text-align: center;">
+                  <p
+                    style="
+                      display: inline-block;
+                      padding-top: 10.5px;
+                      text-align: center;
+                    "
+                    id="lastCardMenuHamburger"
+                  >
+                    Language:
+                    <span
+                      @click="langSwitch()"
+                      id="langIndicator"
+                      style="
+                        font-style: italic;
+                        color: #2f89fc;
+                        cursor: pointer;
+                      "
+                      ref="langIndicator"
+                      >BA</span
+                    >
+                  </p>
                 </div>
               </ul>
             </div>
@@ -143,7 +168,7 @@
                 style="margin-bottom: 30px;"
               >
                 <span>ISA-ERP</span>
-                <h2>Najbolji racunovodstveni softver</h2>
+                <h2>{{text.hero[0]}}</h2>
                 <hr class="highlighter-bot" />
               </div>
               <div
@@ -198,9 +223,7 @@
               class="mb-4"
               style="width: 100%; font-size: 1.2em; margin-top: 30px;"
             >
-              ISA-ERP programski paket je skup međusobno povezanih programskih
-              modula ili podprograma koji cine kompletni poslovno informacioni
-              sistem.
+              {{text.isaErpIntro[0]}}
             </h4>
 
             <h1
@@ -211,124 +234,119 @@
                 margin-bottom: 70px;
               "
             >
-              Moduli
+              {{text.modules[0]}}
             </h1>
 
             <div class="listContainer" id="listContainer">
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Finansijsko knjigovodstvo
+                    {{text.modules[1]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Robno knjigovodstvo - Veleprodaja
+                    {{text.modules[2]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Robno knjigovodstvo - Maloprodaja
+                    {{text.modules[3]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    POS Kasa
+                    {{text.modules[4]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Materijalno knjigovodstvo
+                    {{text.modules[5]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Proizvodnja na bazi normativa
+                    {{text.modules[6]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Fakturisanje usluga
+                    {{text.modules[7]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Knjiga ulaznih faktura, knjiga izlaznih faktura i
-                    generisanje PDV prijave
+                    {{text.modules[8]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Blagajna
+                    {{text.modules[9]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Plate
+                    {{text.modules[10]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Kadrovska evidencija
+                    {{text.modules[11]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Stalna sredstva
+                    {{text.modules[12]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Putni nalozi
+                    {{text.modules[13]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Virmani
+                    {{text.modules[14]}}
                   </p>
                 </div>
               </div>
               <div class="card">
                 <div class="contentBx">
                   <p>
-                    Finansijske knjizne obavijesti
+                    {{text.modules[15]}}
                   </p>
                 </div>
               </div>
             </div>
 
             <p style="margin-bottom: 50px; margin-top: 50px;">
-              ISA-ERP je u potpunosti usklađen s pozitivnim zakonskim propisima
-              u Federaciji Bosne i Hercegovine i Republici Srpskoj. Na sve
-              eventualne izmjene i dopune zakonskih propisa se reaguje u
-              najkraćem mogućem roku i programi se odmah usklađuju s eventualnim
-              izmjenama.
+              {{text.law[0]}}
             </p>
 
             <h1
@@ -339,7 +357,7 @@
                 margin-bottom: 70px;
               "
             >
-              Opste Karakteristike
+              {{text.general[0]}}
             </h1>
 
             <!-- CARDS NEU START -->
@@ -349,12 +367,9 @@
                   <img src="icons/domain.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>All-In-One Sistem</h2>
+                  <h2>{{text.generalTitle[0]}}</h2>
                   <p>
-                    Svi moduli i svi elementi se nalaze u jednom programu i
-                    međusobno su povezani. Podaci uneseni u jednom modulu su
-                    odmah i u drugom modulu na raspolaganju, tako da nema duplog
-                    unosa podataka.
+                    {{text.generalBody[0]}}
                   </p>
                 </div>
               </div>
@@ -363,11 +378,9 @@
                   <img src="icons/popular.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Jednostavnost Koristenja</h2>
+                  <h2>{{text.generalTitle[1]}}</h2>
                   <p>
-                    Korisnički interfejs (GUI) osmišljen je da omogući korisniku
-                    da na jednostavan način evidentira, obradi i izvjesti o svim
-                    poslovnim promjenama.
+                    {{text.generalBody[1]}}
                   </p>
                 </div>
               </div>
@@ -376,11 +389,9 @@
                   <img src="icons/server.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Centralizovana Baza Podataka</h2>
+                  <h2>{{text.generalTitle[2]}}</h2>
                   <p>
-                    Svi korisnici sistema pristupaju jednoj bazi podataka čime
-                    se smanjuje mogućnost duplikacije podataka, netačnih
-                    podataka ili neusklađenosti podataka.
+                    {{text.generalBody[2]}}
                   </p>
                 </div>
               </div>
@@ -389,11 +400,9 @@
                   <img src="icons/shield.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Automatska Zastita Podataka</h2>
+                  <h2>{{text.generalTitle[3]}}</h2>
                   <p>
-                    Za sigurnost, integritet i arhiviranje podataka brine se
-                    sistem za upravljanje bazama podataka. Vasi podaci su uvijek
-                    sigurni i na mjestu.
+                    {{text.generalBody[3]}}
                   </p>
                 </div>
               </div>
@@ -402,11 +411,9 @@
                   <img src="icons/rocket.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Nadogradnja Programa</h2>
+                  <h2>{{text.generalTitle[4]}}</h2>
                   <p>
-                    Praćenjem globalnih tehnoloških trendova u mogućnosti smo da
-                    u vrlo kratkom vremenskom roku i bez ograničenja mijenjamo i
-                    nadograđujemo postojeći informacioni sistem.
+                    {{text.generalBody[4]}}
                   </p>
                 </div>
               </div>
@@ -415,11 +422,9 @@
                   <img src="icons/girl.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Korisnicka Prava</h2>
+                  <h2>{{text.generalTitle[5]}}</h2>
                   <p>
-                    U zavisnosti od pozicije u preduzeću, svakom korisniku je
-                    moguće dodijeliti određen nivo ovlaštenja i pristupa
-                    programu i podataka koje može vidjeti/mijenjati.
+                    {{text.generalBody[5]}}
                   </p>
                 </div>
               </div>
@@ -428,10 +433,9 @@
                   <img src="icons/laptop.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Elektronsko Poslovanje</h2>
+                  <h2>{{text.generalTitle[6]}}</h2>
                   <p>
-                    Omogućena je komunikacija sa programima svih banaka radi
-                    jednostavnijeg importa platnih naloga u program banke.
+                    {{text.generalBody[6]}}
                   </p>
                 </div>
               </div>
@@ -440,12 +444,9 @@
                   <img src="icons/import-export.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Uvoz - Izvoz Podataka</h2>
+                  <h2>{{text.generalTitle[7]}}</h2>
                   <p>
-                    Mogućnost uvoza podataka iz različitih formata: Txt, Excel,
-                    XML, DBF i ostale. Slanje dokumenata putem e-pošte direktno
-                    iz programa, izvoz dokumenata u Word, Excel, HTML, XML, PDF
-                    i druge formate dokumenata
+                    {{text.generalBody[7]}}
                   </p>
                 </div>
               </div>
@@ -454,12 +455,9 @@
                   <img src="icons/chat-bubble.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Mobilna Aplikacija</h2>
+                  <h2>{{text.generalTitle[8]}}</h2>
                   <p>
-                    ISA-ERP je u potpunosti prilagodjen vasem mobilnom uredjaju
-                    tako da mozete u svakom momentu, na svakoj lokaciji da
-                    pristupite vasim podacima. U svakom momentu imate pristup
-                    bazi podataka.
+                    {{text.generalBody[8]}}
                   </p>
                 </div>
               </div>
@@ -468,10 +466,9 @@
                   <img src="icons/framework.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Rad u mrezi, lokalna i udaljena</h2>
+                  <h2>{{text.generalTitle[9]}}</h2>
                   <p>
-                    Neograničen broj istovremenih korisnika koji pristupaju
-                    istoj bazi podataka iz bilo kog modula.
+                    {{text.generalBody[9]}}
                   </p>
                 </div>
               </div>
@@ -480,12 +477,9 @@
                   <img src="icons/fiscal.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Fiskalizacija i izvjestaji</h2>
+                  <h2>{{text.generalTitle[10]}}</h2>
                   <p>
-                    ISA-ERP radi sa svim fiskalnim uredjajima koji su prisutni
-                    na trzistu BiH. ISA-ERP nudi više od 300 različitih
-                    izvještaja po raznim kriterijima uz kontinuirano kreiranje
-                    novih u zavisnosti od potreba, ideja i zahtjeva.
+                    {{text.generalBody[10]}}
                   </p>
                 </div>
               </div>
@@ -494,12 +488,9 @@
                   <img src="icons/book.svg" alt="" />
                 </div>
                 <div class="contentBx">
-                  <h2>Knjigovodstvo</h2>
+                  <h2>{{text.generalTitle[11]}}</h2>
                   <p>
-                    Potpuna integracija pomoćnih knjigovodstava sa glavnom
-                    knjigom (Podatak unesen na jednom mjestu koriste svi
-                    programski moduli). ISA-ERP radi sa svim fiskalnim uređajima
-                    koji su prisutni na tržištu BiH.
+                    {{text.generalBody[11]}}
                   </p>
                 </div>
               </div>
@@ -512,15 +503,34 @@
             <div class="row mb-5 justify-content-center">
               <div class="col-md-5 text-center">
                 <div class="ftco-footer-widget">
-                  <h2 class="mb-3">Kontaktirajte nas</h2>
-                  <p class="h3 email"><a href="#">email@email.com</a></p>
+                  <h2 class="mb-3">{{text.contactFooter[0]}}</h2>
+                  <p>
+                    Email:
+                    <a href="mailto:exelent@bih.net.ba" style="color: #2f89fc;"
+                      >exelent@bih.net.ba</a
+                    >
+                  </p>
+                  <p>
+                    Email:
+                    <a
+                      href="mailto:exelent.maglaj@gmail.com"
+                      style="color: #2f89fc;"
+                      >exelent.maglaj@gmail.com</a
+                    >
+                  </p>
+                  <p>
+                    {{text.contactFooter[1]}}:
+                    <a href="tel:+38761-637-475" style="color: #2f89fc;"
+                      >+387 61 637 475</a
+                    >
+                  </p>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12 text-center" id="footer">
+              <div class="col-md-12 text-center">
                 <p>
-                  {{ currentYear }} Sva prava zadržana | Development by
+                  {{ currentYear }} | Development by
                   <i
                     class="fa fa-instagram"
                     aria-hidden="true"

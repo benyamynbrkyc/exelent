@@ -1,0 +1,65 @@
+{
+  "contact": "Contact",
+  "hero": [
+    "The Perfect Accounting Solution"
+  ],
+  "isaErpIntro": [
+    "The ISA-ERP program package is a set of interconnected program modules or subprograms that form a complete business information system."
+  ],
+  "modules": [
+    "Modules",
+    "Financial accounting",
+    "Commodity Accounting - Wholesale",
+    "Commodity Accounting - Retail",
+    "POS Checkout",
+    "Material accounting",
+    "Production based on norms",
+    "Billing services",
+    "Incoming invoice book, outgoing invoice book and VAT return generation",
+    "Cashier",
+    "Salaries",
+    "Personnel records",
+    "Permanent assets",
+    "Travel orders",
+    "Virman / Transfers",
+    "Financial book notices"
+  ],
+  "law": [
+    "ISA-ERP is fully compliant with the positive legal regulations in the Federation of Bosnia and Herzegovina and the Republika Srpska. All possible changes and amendments to legal regulations are reacted to as soon as possible and the programs are immediately synchronizedΩ with possible changes."
+  ],
+  "general": [
+    "General Features"
+  ],
+  "generalTitle": [
+    "All-In-One System",
+    "Ease of Use",
+    "Centralized Database",
+    "Automatic Data Encryption",
+    "Program Updates",
+    "User Rights",
+    "Electronic Business",
+    "Import - Export Data",
+    "Mobile App",
+    "Networking, local and remote",
+    "Fiscalization and reports",
+    "Bookkeeping"
+  ],
+  "generalBody": [
+    "All modules and all elements are in one program and are interconnected. The data entered in one module is immediately available in the other module, so there is no double data entry.",
+    "The user interface (GUI) is designed to allow the user to easily record, process and report all business changes.",
+    "All system users access a single database, which reduces the possibility of data duplication, inaccurate data or data inconsistencies.",
+    "The security, integrity and archiving of data is ensured by the database management system. Your data is always secure and in place.",
+    "By following global technological trends, we are able to change and upgrade the existing information system in a very short time and without restrictions.",
+    "Depending on the position in the company, each user can be assigned a certain level of authority and access to the program and the data they can see / change.",
+    "Communication with the programs of all banks is enabled in order to facilitate the import of payment orders into the bank's program.",
+    "Ability to import data from various formats: Txt, Excel, XML, DBF and others. Send documents via e-mail directly from the program, export documents to Word, Excel, HTML, XML, PDF and other document formats.",
+    "ISA-ERP is fully adapted to your mobile device so you can access your data at any time, in any location. You have access to the database at all times.",
+    "Unlimited number of concurrent users accessing the same database from any module.",
+    "ISA-ERP works with all fiscal devices present on the market of Bosnia and Herzegovina. ISA-ERP offers more than 300 different reports according to various criteria with continuous creation of new ones depending on needs, ideas and requirements.",
+    "Full integration of auxiliary bookkeeping with the general ledger (Data entered in one place is used by all program modules). ISA-ERP works with all fiscal devices present on the market of Bosnia and Herzegovina."
+  ],
+  "contactFooter": [
+    "Contact Us",
+    "Phone"
+  ]
+}

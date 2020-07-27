@@ -31,4 +31,18 @@ translateRoutes.get('/eng/contact', (req, res) => {
   res.send(engObj)
 })
 
+translateRoutes.get('/bos/isa-erp', (req, res) => {
+  let bosObj = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '/lang/isa-erp/bosanski.json'))
+  )
+  res.send(bosObj)
+})
+
+translateRoutes.get('/eng/isa-erp', (req, res) => {
+  let engObj = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '/lang/isa-erp/english.json'))
+  )
+  res.send(engObj)
+})
+
 module.exports = translateRoutes

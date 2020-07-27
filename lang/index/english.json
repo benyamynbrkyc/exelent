@@ -16,95 +16,57 @@
   "services": [
     "What We Do",
     "Our Services",
-    {
-      "firstSlide": "Mobile Apps",
-      "secondSlide": "Web Apps",
-      "thirdSlide": "Desktop Apps"
-    },
-    {
-      "firstSlide": "Enterprise Level Software",
-      "secondSlide": "Databases",
-      "thirdSlide": "All-In-One Systems"
-    },
-    {
-      "firstSlide": "Custom Software Development, on platforms of Your choosing"
-    }
+    "Mobile Apps",
+    "Web Apps",
+    "Desktop Apps",
+    "Enterprise Level Software",
+    "Databases",
+    "All-In-One Systems",
+    "Custom Software Development, on platforms of Your choosing"
   ],
   "portfolio": [
-    {
-      "intro": [
-        "Leading Enterprise Software",
-        "The Perfect All-In-One accounting system",
-        "Tested on databases with over 1.000.000.000 records, ISA-ERP is the perfect solution for all businesses -",
-        "big and small.",
-        "Find Out More"
-      ]
-    },
-    {
-      "paragraphDiv": [
-        "All modules and elements are encased, interconnected and synchronized in one program.",
-        "Data entered in one module is synced in all others, so there is",
-        " no",
-        " repeating yourself."
-      ]
-    },
-    {
-      "accessibility": [
-        "Accessibility",
-        "Don't want complicated typing procedures and tables?",
-        "Neither do we.",
-        "With the ISA-ERP software package we put customer experience",
-        " first and foremost.",
-        "Accounting doesn't have to be boring.",
-        "Find out more"
-      ]
-    },
-    {
-      "mobileApp": [
-        "Mobile App",
-        "Complete control from your smart device.",
-        "ISA-ERP is completely adapted for mobile so you can",
-        "access your data",
-        "in any moment, at any location.",
-        "Find out more"
-      ]
-    },
-    {
-      "security": [
-        "Security",
-        "Automatic encryption for maximum security.",
-        "Our database management system is responsible for the safety, integrity and storage of your data. Developed with a special accent on safety, so you can worry less about data and more about",
-        "results",
-        "Find out more"
-      ]
-    },
-    {
-      "eBanking": [
-        "E-business",
-        "Full integration with bank systems.",
-        "ISA-ERP makes E-business",
-        "easier than ever",
-        "Completely synchronized communication with bank software, payment order imports, export in Word, Excel, PDF and other formats.",
-        "Find out more"
-      ]
-    },
-    {
-      "network": [
-        "Network",
-        "Work in a network - local and remote.",
-        "Unlimited number",
-        "of concurrent users accessing the same database in any module. Auxiliary bookkeeping completely integrated with the main book (Data entered in one place is used by all program modules).",
-        "Find out more"
-      ]
-    },
-    {
-      "yearsOfExperience": [
-        "Many Years of Experience",
-        "Clients",
-        "Lines of Code",
-        "Cups of Coffee"
-      ]
-    }
+    "Leading Enterprise Software",
+    "The Perfect All-In-One accounting system",
+    "Tested on databases with over 1.000.000.000 records, ISA-ERP is the perfect solution for all businesses -",
+    "big and small.",
+    "Find Out More",
+    "All modules and elements are encased, interconnected and synchronized in one program.",
+    "Data entered in one module is synced in all others, so there is",
+    " no",
+    " repeating yourself.",
+    "Accessibility",
+    "Don't want complicated typing procedures and tables?",
+    "Neither do we.",
+    "With the ISA-ERP software package we put customer experience",
+    " first and foremost.",
+    "Accounting doesn't have to be boring.",
+    "Find out more",
+    "Mobile App",
+    "Complete control from your smart device.",
+    "ISA-ERP is completely adapted for mobile so you can",
+    "access your data",
+    "in any moment, in any location.",
+    "Find out more",
+    "Security",
+    "Automatic encryption for maximum security.",
+    "Our database management system is responsible for the safety, integrity and storage of your data. Developed with a special accent on safety, so you can worry less about data and more about",
+    "results",
+    "Find out more",
+    "E-business",
+    "Full integration with bank systems.",
+    "ISA-ERP makes E-business",
+    "easier than ever",
+    "Completely synchronized communication with bank software, payment order imports, export in Word, Excel, PDF and other formats.",
+    "Find out more",
+    "Network",
+    "Work in a network - local and remote.",
+    "Unlimited number",
+    "of concurrent users accessing the same database in any module. Auxiliary bookkeeping completely integrated with the main book (Data entered in one place is used by all program modules).",
+    "Find out more",
+    "Many Years of Experience",
+    "Clients",
+    "Lines of Code",
+    "Cups of Coffee"
   ],
   "contactFooter": [
     "Contact Us"

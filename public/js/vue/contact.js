@@ -4,7 +4,8 @@ new Vue({
     text: {
       contact: '',
       hero: [undefined],
-      emailForm: [undefined]
+      emailForm: [undefined],
+      contactFooter: [undefined]
     },
     currentYear: new Date().getFullYear()
   },
@@ -41,22 +42,5 @@ new Vue({
         window.scrollBy(0, 300)
       }
     }
-  }
-})
-
-// new Vue({
-//   el: '#emailShortcut',
-//   data: {
-//     currentYear: new Date().getFullYear()
-//   },
-//   methods: {
-
-//   }
-// })
-
-new Vue({
-  el: '#footer',
-  data: {
-    currentYear: new Date().getFullYear()
   }
 })

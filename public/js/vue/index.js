@@ -9,7 +9,7 @@ new Vue({
       ici: [undefined],
       services: [undefined],
       portfolio: [undefined],
-      contact: [undefined]
+      contactFooter: [undefined]
     },
     currentYear: new Date().getFullYear()
   },
@@ -27,11 +27,11 @@ new Vue({
   methods: {
     async langSwitch() {
       if (this.$refs.langIndicator.innerText == 'BA') {
-        let engObj = await axios.get('/translate/eng/contact')
+        let engObj = await axios.get('/translate/eng/index')
         this.text = engObj.data
         this.$refs.langIndicator.innerText = 'EN'
       } else {
-        let bosObj = await axios.get('/translate/bos/contact')
+        let bosObj = await axios.get('/translate/bos/index')
         this.text = bosObj.data
         this.$refs.langIndicator.innerText = 'BA'
       }
