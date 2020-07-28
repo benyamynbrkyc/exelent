@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="icon" type="image/png" href="images/Logo2_mali.png" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,700"
@@ -98,7 +99,10 @@
               </a>
             </div>
 
-            <div class="navbar-menu" id="open-navbar1">
+            <div
+              class="navbar-menu ftco-animate fadeInUp ftco-animated"
+              id="open-navbar1"
+            >
               <ul class="navbar-nav">
                 <div class="navCardContainer">
                   <li class="card" id="navCard">
@@ -117,6 +121,7 @@
                     <a href="/contact">{{text.contact}}</a>
                   </li>
                 </div>
+
                 <div style="text-align: center;">
                   <p
                     style="
@@ -177,22 +182,23 @@
                   </h2>
                   <div class="linkCardContainer">
                     <li class="card">
-                      <a>Viteška bb</a>
+                      <a href="#mapLocation"><img src="icons/location.svg" height="50px" width="50px" style="padding-right: 10px;"></img>Viteška bb, Maglaj, BiH</a>
                     </li>
                   </div>
                   <div class="linkCardContainer">
                     <li class="card">
                       <a href="tel:+38761-637-475" style="color: #2f89fc;"
-                        >+387 61 637 475</a
+                        ><img src="icons/answer.svg" height="50px" width="50px" style="padding-right: 10px;"></img>+387 61 637 475</a
                       >
                     </li>
                   </div>
                   <div class="linkCardContainer">
-                    <li class="card">
+                    <li class="card" >
+                      
                       <a
                         href="mailto:exelent@bih.net.ba"
                         style="color: #2f89fc;"
-                        >exelent@bih.net.ba</a
+                        ><img src="icons/email.svg" height="50px" width="50px" style="padding-right: 10px;"></img>exelent@bih.net.ba</a
                       >
                     </li>
                   </div>
@@ -201,13 +207,13 @@
                       <a
                         href="mailto:exelent.maglaj@gmail.com"
                         style="color: #2f89fc;"
-                        >exelent.maglaj@gmail.com</a
+                        ><img src="icons/email.svg" height="50px" width="50px" style="padding-right: 10px;"></img>exelent.maglaj@gmail.com</a
                       >
                     </li>
                   </div>
                 </div>
               </div>
-              <div
+              <!-- <div
                 class="block-3 d-md-flex ftco-animate"
                 data-scrollax-parent="true"
                 style="width: 100%; margin-top: 100px;"
@@ -265,17 +271,18 @@
                     </li>
                   </div>
                 </form>
-              </div>
+              </div> -->
             </div>
             <div
               data-scrollax-parent="true"
               class="block-3 d-md-flex ftco-animate fadeInUp ftco-animated"
               style="width: 100%; margin-top: 150px;"
+              id="mapLocation"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2843.370699585559!2d18.094656851527215!3d44.548516278998164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sba!4v1595511531521!5m2!1sen!2sba"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d177.710715372957!2d18.096883000000002!3d44.548501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x277797c4f142c0b6!2sEXElent%20Maglaj!5e0!3m2!1sen!2sba!4v1595879378539!5m2!1sen!2sba"
                 width="100%"
-                height="550"
+                height="300"
                 frameborder="0"
                 style="border: 0;"
                 allowfullscreen=""
@@ -286,36 +293,10 @@
           </div>
         </section>
 
-        <footer class="ftco-footer ftco-bg-dark ftco-section" id="fooer">
+        <footer class="ftco-footer ftco-bg-dark ftco-section" id="footer">
           <div class="container">
-            <div class="row mb-5 justify-content-center">
-              <div class="col-md-5 text-center">
-                <div class="ftco-footer-widget">
-                  <h2 class="mb-3">{{text.contactFooter[0]}}</h2>
-                  <p>
-                    Email:
-                    <a href="mailto:exelent@bih.net.ba" style="color: #2f89fc;"
-                      >exelent@bih.net.ba</a
-                    >
-                  </p>
-                  <p>
-                    Email:
-                    <a
-                      href="mailto:exelent.maglaj@gmail.com"
-                      style="color: #2f89fc;"
-                      >exelent.maglaj@gmail.com</a
-                    >
-                  </p>
-                  <p>
-                    {{text.contactFooter[1]}}:
-                    <a href="tel:+38761-637-475" style="color: #2f89fc;"
-                      >+387 61 637 475</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
+            
+            <div class="row" >
               <div class="col-md-12 text-center">
                 <p>
                   {{ currentYear }} | Development by
@@ -377,10 +358,15 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+    <!-- <script src="js/google-map.js"></script> -->
+    <!-- <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    ></script> -->
     <script src="js/main.js"></script>
-    <script src="js/navbar.js"></script>
     <script src="js/vue/contact.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>

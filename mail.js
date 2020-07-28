@@ -1,10 +1,12 @@
 const nodemailer = require('nodemailer')
 const mailGun = require('nodemailer-mailgun-transport')
 
+const { mailgunApiKey, mailgunDomain } = require('./config')
+
 const auth = {
   auth: {
-    api_key: '16cc73a878a15c0431d734aac7bce731-1b6eb03d-126cc625',
-    domain: 'sandbox186fc5fa81fb48e7a30ad0d446a832da.mailgun.org'
+    api_key: `${mailgunApiKey}`,
+    domain: mailgunDomain
   }
 }
 

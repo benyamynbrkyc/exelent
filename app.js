@@ -10,7 +10,7 @@ const translateRoutes = require('./translator')
 const { ESRCH } = require('constants')
 
 app.use(express.static(path.join(__dirname, '/public')))
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use('/translate', translateRoutes)
 
 const PORT = process.env.PORT || 3001
@@ -40,8 +40,10 @@ app.post('/email', (req, res) => {
   console.log('server received the data', req.body)
 
   sendMail(email, subject, text, (err, data) => {
-    if (err) res.json({ message: 'Internal Error', err })
-    else res.json({ message: 'Email sent!', data })
+    if (err) {
+      res.json({ message: 'Internal Error', err })
+      console.log(err)
+    } else res.json({ message: 'Email sent!', data })
   })
 })
 
