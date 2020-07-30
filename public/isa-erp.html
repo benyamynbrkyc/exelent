@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EXElent d.o.o</title>
+    <title>EXElent d.o.o | ISA-ERP</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="The Best ERP Solution for both big and small businesses. Easily scalable, professional business and custom software."
+    />
+    <meta
+      name="keywords"
+      content="soft erp, enterprise planning resources, erp system, erp consultants, erp sistem, accounting erp, acronym erp, application of erp, apps erp, axapta erp, best erp, best erp for small business, best erp solution, best erp system, business erp, business erp system, business process erp, cloud based erp, cloud erp, cloud erp solution, cloud erp system, crm erp, data erp, development of erp"
+    />
+    <meta
+      name="author"
+      content="Benjamin Brkic | development by @benyamynbrkyc"
     />
     <link rel="icon" type="image/png" href="images/Logo2_mali.png" />
 
@@ -46,7 +58,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <script src="js/vue/vue.js"></script>
+    <script src="js/vue/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
     <script>
@@ -67,6 +79,10 @@
         })
       })
     </script>
+    <script
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk/debug.js"
+    ></script>
   </head>
   <body>
     <div id="app">
@@ -107,7 +123,10 @@
               </a>
             </div>
 
-            <div class="navbar-menu" id="open-navbar1">
+            <div
+              class="navbar-menu ftco-animate fadeInUp ftco-animated"
+              id="open-navbar1"
+            >
               <ul class="navbar-nav">
                 <div class="navCardContainer">
                   <li class="card" id="navCard">
@@ -510,17 +529,26 @@
                   <div class="linkCardContainer">
                     <li class="card">
                       <a href="tel:+38761-637-475" style="color: #2f89fc;"
-                        ><img src="icons/answer.svg" height="50px" width="50px" style="padding-right: 10px;"></img>+387 61 637 475</a
+                        ><img
+                          src="icons/answer.svg"
+                          height="50px"
+                          width="50px"
+                          style="padding-right: 10px;"
+                        />+387 61 637 475</a
                       >
                     </li>
                   </div>
                   <div class="linkCardContainer">
-                    <li class="card" >
-                      
+                    <li class="card">
                       <a
                         href="mailto:exelent@bih.net.ba"
                         style="color: #2f89fc;"
-                        ><img src="icons/email.svg" height="50px" width="50px" style="padding-right: 10px;"></img>exelent@bih.net.ba</a
+                        ><img
+                          src="icons/email.svg"
+                          height="50px"
+                          width="50px"
+                          style="padding-right: 10px;"
+                        />exelent@bih.net.ba</a
                       >
                     </li>
                   </div>
@@ -529,7 +557,12 @@
                       <a
                         href="mailto:exelent.maglaj@gmail.com"
                         style="color: #2f89fc;"
-                        ><img src="icons/email.svg" height="50px" width="50px" style="padding-right: 10px;"></img>exelent.maglaj@gmail.com</a
+                        ><img
+                          src="icons/email.svg"
+                          height="50px"
+                          width="50px"
+                          style="padding-right: 10px;"
+                        />exelent.maglaj@gmail.com</a
                       >
                     </li>
                   </div>
@@ -620,5 +653,26 @@
     <script src="js/vue/isa-erp.js"></script>
 
     <script src="js/navbar.js"></script>
+    <script>
+      window.fbAsyncInit = (function () {
+        FB.init({
+          appId: '584149395828182',
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: 'v7.0'
+        })
+      })(
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0]
+          if (d.getElementById(id)) return
+          js = d.createElement(s)
+          js.id = id
+          js.src =
+            'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
+          fjs.parentNode.insertBefore(js, fjs)
+        })(document, 'script', 'facebook-jssdk')
+      )
+    </script>
   </body>
 </html>
