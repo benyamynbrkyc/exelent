@@ -17,13 +17,6 @@ new Vue({
     let bosObj = await axios.get('/translate/bos/index')
     this.text = bosObj.data
   },
-  created() {
-    window.addEventListener('keydown', (e) => {
-      if (e.key == 'Escape') {
-        this.langSwitch()
-      }
-    })
-  },
   methods: {
     async langSwitch() {
       if (this.$refs.langIndicator.innerText == 'BA') {
