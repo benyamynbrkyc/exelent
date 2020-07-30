@@ -4,7 +4,6 @@ const app = express()
 const bodyParser = require('body-parser')
 const expressValidator = require('express-validator')
 const nodemailer = require('nodemailer')
-const sendMail = require('./mail')
 
 const translateRoutes = require('./translator')
 const { ESRCH } = require('constants')
@@ -33,18 +32,6 @@ app.get('/isa-erp', (req, res) => {
 
 app.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/contact.html'))
-})
-
-app.post('/email', (req, res) => {
-  const { subject, email, text } = req.body
-  console.log('server received the data', req.body)
-
-  sendMail(email, subject, text, (err, data) => {
-    if (err) {
-      res.json({ message: 'Internal Error', err })
-      console.log(err)
-    } else res.json({ message: 'Email sent!', data })
-  })
 })
 
 app.listen(PORT, () => {
