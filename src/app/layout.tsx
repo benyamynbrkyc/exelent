@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import { type Metadata } from "next";
+import { Nav } from "./nav";
 
 export const metadata: Metadata = {
   title: "Next Boilerplate",
@@ -21,6 +22,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Nav />
           {children}
         </ThemeProvider>
       </body>
