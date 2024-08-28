@@ -1,22 +1,47 @@
 {
-  "name": "ici-site",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "next-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "dot-prop": "^5.2.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-validator": "^6.5.0",
-    "lodash": "^4.17.19",
-    "nodemailer": "^6.4.8",
-    "nodemailer-mailgun-transport": "^2.0.0",
-    "nodemon": "^2.0.2"
-  }
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-navigation-menu": "^1.2.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.436.0",
+    "next": "^14.2.4",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.3"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.4",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.5.3"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.37.0"
+  },
+  "packageManager": "pnpm@8.15.4"
 }
