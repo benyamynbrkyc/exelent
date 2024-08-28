@@ -5,8 +5,9 @@ import { type Metadata } from "next";
 import { Nav } from "./nav";
 
 export const metadata: Metadata = {
-  title: "Next Boilerplate",
-  description: "🚀",
+  title: "EXElent d.o.o | Scalable ERP & Custom Development Solutions",
+  description:
+    "Providing scalable and reliable ERP solutions for businesses of all sizes, with custom software designed for stability and growth.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
