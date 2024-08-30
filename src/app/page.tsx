@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+      <Separator className="my-8" />
+      <SideBySide />
     </>
   );
 }
@@ -50,6 +54,30 @@ function Hero() {
           }}
           className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 dark:opacity-10 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
         />
+      </div>
+    </div>
+  );
+}
+
+function SideBySide() {
+  return (
+    <div className="container mx-auto px-4 py-16">
+      <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="w-full md:w-1/2">
+          <Image
+            src="https://picsum.photos/600/400"
+            alt="Random placeholder image"
+            width={600}
+            height={400}
+            className="rounded-lg object-cover"
+          />
+        </div>
+        <div className="w-full md:w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Section Title</h2>
+          <p className="text-muted-foreground">
+            Your content goes here. Describe your services, company, or any other relevant information.
+          </p>
+        </div>
       </div>
     </div>
   );

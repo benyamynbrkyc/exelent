@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Nav() {
   return (
-    <div className="sticky top-0 isolate z-50 flex items-center justify-between p-10 lg:justify-center lg:gap-44">
+    <div className="sticky top-0 isolate z-50 flex items-center justify-between p-10 lg:justify-center lg:gap-44 bg-white/20 dark:bg-gray-900/20 backdrop-blur-md">
       <div className="font-bold">Coming Soon</div>
       {/* desktop menu */}
       <div className="hidden items-center gap-44 lg:flex">
