@@ -11,5 +11,21 @@
     "title": "Custom Web, Mobile, and Desktop Applications",
     "description": "Expertly crafted software solutions tailored to your specific needs",
     "contactUs": "Contact Us"
+  },
+  "services": {
+    "sectionSubtitle": "WHAT WE DO",
+    "sectionTitle": "Our Services",
+    "crossPlatform": {
+      "title": "Cross-Platform Development",
+      "description": "Mobile Applications. Web Solutions. Desktop Software."
+    },
+    "enterpriseSolutions": {
+      "title": "Enterprise Solutions",
+      "description": "Accounting Software. Database Management. All-In-One ERP Systems."
+    },
+    "customDevelopment": {
+      "title": "Bespoke Software",
+      "description": "Tailored Applications. Custom Programming. Platform of Your Choice."
+    }
   }
 }

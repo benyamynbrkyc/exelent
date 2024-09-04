@@ -11,5 +11,21 @@
     "title": "Prilagođene web, mobilne i desktop aplikacije",
     "description": "Stručno izrađena softverska rješenja prilagođena vašim specifičnim potrebama",
     "contactUs": "Kontaktirajte nas"
+  },
+  "services": {
+    "sectionSubtitle": "ŠTA RADIMO",
+    "sectionTitle": "Naše usluge",
+    "crossPlatform": {
+      "title": "Razvoj za Više Platformi",
+      "description": "Mobilne Aplikacije. Web Rješenja. Desktop Softver."
+    },
+    "enterpriseSolutions": {
+      "title": "Poslovna Rješenja",
+      "description": "Računovodstveni Softver. Upravljanje Bazama Podataka. Sveobuhvatni ERP Sistemi."
+    },
+    "customDevelopment": {
+      "title": "Softver po Mjeri",
+      "description": "Prilagođene Aplikacije. Programiranje po Narudžbi. Platforma po Vašem Izboru."
+    }
   }
 }
