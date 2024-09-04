@@ -5,7 +5,7 @@ import { Link, usePathname } from "@/i18n/routing";
 import { useLocale } from "next-intl";
 
 export function LangSwitcher() {
-  const t = useTranslations("LanguageSwitcher");
+  const t = useTranslations("languageSwitcher");
   const locale = useLocale();
   const pathname = usePathname();
 
@@ -16,7 +16,7 @@ export function LangSwitcher() {
         locale="en"
         className={locale === "en" ? "font-bold" : ""}
       >
-        {t("English")}
+        {t("english")}
       </Link>
       {" | "}
       <Link
@@ -24,7 +24,7 @@ export function LangSwitcher() {
         locale="bs"
         className={locale === "bs" ? "font-bold" : ""}
       >
-        {t("Bosnian")}
+        {t("bosnian")}
       </Link>
     </div>
   );

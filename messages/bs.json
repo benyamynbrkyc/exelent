@@ -1,13 +1,13 @@
 {
-  "Home": "Početna",
-  "ISA-ERP": "ISA-ERP",
-  "Contact": "Kontakt",
-  "LanguageSwitcher": {
-    "English": "ENG",
-    "Bosnian": "BOS"
+  "home": "Početna",
+  "isaErp": "ISA-ERP",
+  "contact": "Kontakt",
+  "languageSwitcher": {
+    "english": "ENG",
+    "bosnian": "BOS"
   },
-  "Hero": {
-    "discoverERP": "Otkrijte naše ERP rješenje za preduzeća",
+  "hero": {
+    "discoverErp": "Otkrijte naše ERP rješenje za preduzeća",
     "title": "Prilagođene web, mobilne i desktop aplikacije",
     "description": "Stručno izrađena softverska rješenja prilagođena vašim specifičnim potrebama",
     "contactUs": "Kontaktirajte nas"

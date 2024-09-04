@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 
 export default async function HomePage() {
-  const t = await getTranslations("Hero");
+  const t = await getTranslations("hero");
 
   return (
     <>
@@ -39,7 +39,7 @@ function Hero({ t }: { t: any }) {
               href="/erp-solution"
               className="inline-flex items-center text-sm font-semibold"
             >
-              {t("discoverERP")}
+              {t("discoverErp")}
               <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </Badge>

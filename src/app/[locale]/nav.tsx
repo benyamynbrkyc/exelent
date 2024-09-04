@@ -1,21 +1,19 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { LangSwitcher } from "./lang-switcher";
 
-export function Nav() {
-  const t = useTranslations();
+export async function Nav() {
+  const t = await getTranslations();
 
   return (
     <div className="sticky top-0 isolate z-50 flex items-center justify-between bg-white/20 p-10 backdrop-blur-md dark:bg-gray-900/20 lg:justify-center lg:gap-44">
       <div className="font-bold">Coming Soon</div>
       {/* desktop menu */}
       <div className="hidden items-center gap-44 lg:flex">
-        <Links />
+        <Links t={t} />
         <LangSwitcher />
       </div>
       {/* mobile menu */}
@@ -26,7 +24,7 @@ export function Nav() {
           </SheetTrigger>
           <SheetContent>
             <div className="mt-8 space-y-10">
-              <Links />
+              <Links t={t} />
               <LangSwitcher />
             </div>
           </SheetContent>
@@ -36,18 +34,17 @@ export function Nav() {
   );
 }
 
-function Links() {
-  const t = useTranslations();
+function Links({ t }: { t: any }) {
   return (
     <nav className="flex flex-col gap-4 lg:flex-row lg:items-center">
       <Button asChild variant={"outline"}>
-        <Link href="/">{t("Home")}</Link>
+        <Link href="/">{t("home")}</Link>
       </Button>
       <Button asChild variant={"outline"}>
-        <Link href="#">{t("ISA-ERP")}</Link>
+        <Link href="#">{t("isaErp")}</Link>
       </Button>
       <Button asChild variant={"outline"}>
-        <Link href="#">{t("Contact")}</Link>
+        <Link href="#">{t("contact")}</Link>
       </Button>
     </nav>
   );
