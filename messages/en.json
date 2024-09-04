@@ -1,0 +1,15 @@
+{
+  "Home": "Home",
+  "ISA-ERP": "ISA-ERP",
+  "Contact": "Contact",
+  "LanguageSwitcher": {
+    "English": "ENG",
+    "Bosnian": "BOS"
+  },
+  "Hero": {
+    "discoverERP": "Discover our Enterprise-Ready ERP Solution",
+    "title": "Custom Web, Mobile, and Desktop Applications",
+    "description": "Expertly crafted software solutions tailored to your specific needs",
+    "contactUs": "Contact Us"
+  }
+}

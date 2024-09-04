@@ -1,17 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/routing";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const t = await getTranslations("Hero");
+
   return (
     <>
-      <Hero />
+      <Hero t={t} />
     </>
   );
 }
 
-function Hero() {
+function Hero({ t }: { t: any }) {
   return (
     <div className="relative isolate px-6 pt-10 lg:px-8">
       <div
@@ -28,21 +31,27 @@ function Hero() {
       </div>
       <div className="mx-auto max-w-2xl py-20 sm:py-32 lg:py-40">
         <div className="text-center">
-          <Badge variant="secondary"  className="mb-4 hover:bg-secondary/80 transition-colors">
-            <Link href="/erp-solution" className="inline-flex items-center text-sm font-semibold">
-              Discover our Enterprise-Ready ERP Solution
+          <Badge
+            variant="secondary"
+            className="mb-4 transition-colors hover:bg-secondary/80"
+          >
+            <Link
+              href="/erp-solution"
+              className="inline-flex items-center text-sm font-semibold"
+            >
+              {t("discoverERP")}
               <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </Badge>
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
-            Custom Web, Mobile, and Desktop Applications
+            {t("title")}
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Expertly crafted software solutions tailored to your specific needs
+            {t("description")}
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button asChild size="lg" className="text-lg px-8 py-3">
-              <Link href="/contact">Contact Us</Link>
+            <Button asChild size="lg" className="px-8 py-3 text-lg">
+              <Link href="/contact">{t("contactUs")}</Link>
             </Button>
           </div>
         </div>
