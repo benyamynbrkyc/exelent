@@ -27,5 +27,16 @@
       "title": "Bespoke Software",
       "description": "Tailored Applications. Custom Programming. Platform of Your Choice."
     }
+  },
+  "portfolio": {
+    "subtitle": "OUR WORK",
+    "title": "Featured Project",
+    "item": {
+      "subtitle": "Enterprise Resource Planning",
+      "title": "All-In-One Accounting System",
+      "description": "Tested on databases where a single file size exceeds 1,000,000,000 records, ISA-ERP is an excellent solution for all businesses - ",
+      "highlight": "large and small.",
+      "cta": "Learn More"
+    }
   }
 }

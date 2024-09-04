@@ -27,5 +27,16 @@
       "title": "Softver po Mjeri",
       "description": "Prilagođene Aplikacije. Programiranje po Narudžbi. Platforma po Vašem Izboru."
     }
+  },
+  "portfolio": {
+    "subtitle": "NAŠ RAD",
+    "title": "Istaknuti Projekat",
+    "item": {
+      "subtitle": "Enterprise resource planning",
+      "title": "All-In-One računovodstveni sistem",
+      "description": "Testiran na bazama podataka gdje je veličina jedne datoteke preko 1.000.000.000 zapisa, ISA-ERP je odlična solucija za sve biznise - ",
+      "highlight": "velike i male.",
+      "cta": "Saznajte Više"
+    }
   }
 }

@@ -5,15 +5,18 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Globe, PenTool, Database } from "lucide-react";
+import Image from "next/image";
 
 export default async function HomePage() {
   const t = await getTranslations("hero");
   const st = await getTranslations("services");
+  const pt = await getTranslations("portfolio");
 
   return (
     <>
       <Hero t={t} />
       <ServiceCards t={st} />
+      <PortfolioShowcase t={pt} />
     </>
   );
 }
@@ -123,6 +126,47 @@ function ServiceCards({ t }: { t: any }) {
           </Card>
         ))}
       </div>
+    </div>
+  );
+}
+
+function PortfolioShowcase({ t }: { t: any }) {
+  return (
+    <div className="container mx-auto px-4 py-16">
+      <h2 className="mb-2 text-center text-sm font-medium uppercase tracking-wide text-muted-foreground">
+        {t("subtitle")}
+      </h2>
+      <h1 className="mb-12 text-center text-4xl font-bold text-primary md:text-5xl">
+        {t("title")}
+      </h1>
+
+      <Card className="overflow-hidden">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex items-center justify-center bg-muted p-6 md:w-1/2 md:p-12">
+            <Image
+              src="/ISA-ERP.png"
+              alt="ISA-ERP Logo"
+              width={200}
+              height={200}
+              className="h-auto max-w-full"
+            />
+          </div>
+          <CardContent className="flex flex-col justify-center p-6 md:w-1/2 md:p-12">
+            <h3 className="mb-4 text-lg font-semibold uppercase text-muted-foreground">
+              {t("item.subtitle")}
+            </h3>
+            <h2 className="mb-4 text-3xl font-bold">{t("item.title")}</h2>
+            <p className="mb-6 text-muted-foreground">
+              {t("item.description")}
+              <span className="font-semibold text-foreground">
+                {" "}
+                {t("item.highlight")}
+              </span>
+            </p>
+            <Button className="self-start">{t("item.cta")}</Button>
+          </CardContent>
+        </div>
+      </Card>
     </div>
   );
 }
