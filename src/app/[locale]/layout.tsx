@@ -2,8 +2,8 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { type Metadata } from "next";
 import { Nav } from "./nav";
-import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { notFound } from 'next/navigation';
+import { NextIntlClientProvider, useMessages } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "EXElent d.o.o | Scalable ERP & Custom Development Solutions",
@@ -13,16 +13,17 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'bs' }];
+  return [{ locale: "en" }, { locale: "bs" }];
 }
 
 export default function RootLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  unstable_setRequestLocale(locale);
   const messages = useMessages();
 
   return (

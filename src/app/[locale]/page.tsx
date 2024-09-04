@@ -1,13 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { getTranslations } from "@/utils/translations";
 import { Link } from "@/i18n/routing";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Globe, PenTool, Database } from "lucide-react";
 import Image from "next/image";
+import { type TranslationFunction } from "@/types/translations";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default async function HomePage() {
+type Props = {
+  params: { locale: string };
+};
+
+export default async function Page({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
+
   const t = await getTranslations("hero");
   const st = await getTranslations("services");
   const pt = await getTranslations("portfolio");
@@ -21,7 +29,7 @@ export default async function HomePage() {
   );
 }
 
-function Hero({ t }: { t: any }) {
+function Hero({ t }: { t: TranslationFunction }) {
   return (
     <div className="relative isolate px-6 pt-10 lg:px-8">
       <div
@@ -97,7 +105,7 @@ const services = [
   },
 ];
 
-function ServiceCards({ t }: { t: any }) {
+function ServiceCards({ t }: { t: TranslationFunction }) {
   return (
     <div className="container mx-auto px-4 py-16">
       <h2 className="mb-2 text-center text-sm font-medium uppercase tracking-wide text-muted-foreground">
@@ -130,7 +138,7 @@ function ServiceCards({ t }: { t: any }) {
   );
 }
 
-function PortfolioShowcase({ t }: { t: any }) {
+function PortfolioShowcase({ t }: { t: TranslationFunction }) {
   return (
     <div className="container mx-auto px-4 py-16">
       <h2 className="mb-2 text-center text-sm font-medium uppercase tracking-wide text-muted-foreground">

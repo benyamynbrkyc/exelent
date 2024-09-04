@@ -4,6 +4,7 @@ import { Menu } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { LangSwitcher } from "./lang-switcher";
+import { type TranslationFunction } from "@/types/translations";
 
 export async function Nav() {
   const t = await getTranslations();
@@ -34,7 +35,7 @@ export async function Nav() {
   );
 }
 
-function Links({ t }: { t: any }) {
+function Links({ t }: { t: TranslationFunction }) {
   return (
     <nav className="flex flex-col gap-4 lg:flex-row lg:items-center">
       <Button asChild variant={"outline"}>
