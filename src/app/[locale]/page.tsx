@@ -19,8 +19,6 @@ export default async function Page({ params: { locale } }: Props) {
 
   const t = await getTranslations("hero");
   const st = await getTranslations("services");
-  const pt = await getTranslations("portfolio");
-  const et = await getTranslations("emphasis");
 
   return (
     <>
