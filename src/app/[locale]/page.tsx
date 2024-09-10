@@ -216,8 +216,6 @@ function PortfolioItem({
   direction,
   isMain = false,
 }: PortfolioItemProps) {
-  console.log(item);
-
   const imageSection = (
     <div className="flex items-center justify-center bg-muted p-6 md:w-1/2 md:p-12">
       <Image
