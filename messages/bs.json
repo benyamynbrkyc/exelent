@@ -37,7 +37,7 @@
       "description": "Testiran na bazama podataka gdje je veličina jedne datoteke preko 1.000.000.000 zapisa, ISA-ERP je odlična solucija za sve biznise - ",
       "highlight": "velike i male.",
       "cta": "Saznajte Više",
-      "image": "/ISA-ERP.png"
+      "image": "/ISA-ERP.webp"
     },
     "items": {
       "accessibility": {
@@ -46,7 +46,7 @@
         "description": "Ni mi. Sa ISA-ERP softverskim paketom korisničko iskustvo stavljamo na prvo mjesto. Računovodstvo ne mora biti dosadno.",
         "highlight": "Inkluzivni dizajn za sve.",
         "cta": "Saznajte Više",
-        "image": "/happy-people.png"
+        "image": "/happy-people.webp"
       },
       "mobileApp": {
         "subtitle": "Mobilna Aplikacija",
@@ -54,7 +54,7 @@
         "description": "ISA-ERP je u potpunosti prilagođen vašem mobilnom uređaju tako da možete da pristupite vašim podacima u svakom momentu, na svakoj lokaciji.",
         "highlight": "Poslovanje na dohvat ruke.",
         "cta": "Saznajte Više",
-        "image": "/isaerp-mobile.png"
+        "image": "/isaerp-mobile.webp"
       },
       "security": {
         "subtitle": "Sigurnost",
@@ -62,7 +62,7 @@
         "description": "Za sigurnost, integritet i arhiviranje podataka brine se sistem za upravljanje bazama podataka. Razvijen sa posebnim akcentom na sigurnost, tako da manje brinete o podacima, a vise o rezultatima.",
         "highlight": "Vaši podaci, naš prioritet.",
         "cta": "Saznajte Više",
-        "image": "/cyber-security.png"
+        "image": "/cyber-security.webp"
       },
       "eBusiness": {
         "subtitle": "Elektronsko Poslovanje",
@@ -70,7 +70,7 @@
         "description": "ISA-ERP čini elektronsko poslovanje lakšim nego ikada. Potpuno sinhronizovana komunikacija sa programima svih banaka, import platnih naloga, te export u Word, Excel, PDF i druge formate.",
         "highlight": "Spajamo digitalno i fizičko.",
         "cta": "Saznajte Više",
-        "image": "/payment.png"
+        "image": "/payment.webp"
       },
       "network": {
         "subtitle": "Mreža",
@@ -78,7 +78,7 @@
         "description": "Neograničen broj istovremenih korisnika koji pristupaju istoj bazi podataka iz bilo kog modula. Potpuna integracija pomoćnih knjigovodstava sa glavnom knjigom (Podatak unesen na jednom mjestu koriste svi programski moduli).",
         "highlight": "Povezujemo vaše poslovanje.",
         "cta": "Saznajte Više",
-        "image": "/network.png"
+        "image": "/network.webp"
       }
     }
   },
