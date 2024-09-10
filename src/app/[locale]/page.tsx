@@ -146,6 +146,14 @@ async function PortfolioShowcase() {
   const t = await getTranslations("portfolio");
   const et = await getTranslations("emphasis");
 
+  const itemKeys = [
+    "accessibility",
+    "mobileApp",
+    "security",
+    "eBusiness",
+    "network",
+  ] as const;
+
   return (
     <div className="container mx-auto px-4 py-16">
       <h2 className="mb-2 text-center text-sm font-medium uppercase tracking-wide text-muted-foreground">
@@ -156,29 +164,68 @@ async function PortfolioShowcase() {
       </h1>
 
       <div className="space-y-20">
-        <PortfolioItem t={t} direction="left" isMain={true} />
+        <PortfolioItem
+          item={{
+            subtitle: t(`mainItem.subtitle`),
+            title: t(`mainItem.title`),
+            description: t(`mainItem.description`),
+            highlight: t(`mainItem.highlight`),
+            cta: t(`mainItem.cta`),
+            image: t(`mainItem.image`),
+          }}
+          direction="left"
+          isMain={true}
+        />
+
         <EmphasizedText text={et("content")} />
-        <PortfolioItem t={t} direction="right" isMain={false} />
+
+        {itemKeys.map((key, index) => (
+          <PortfolioItem
+            key={key}
+            item={{
+              subtitle: t(`items.${key}.subtitle`),
+              title: t(`items.${key}.title`),
+              description: t(`items.${key}.description`),
+              highlight: t(`items.${key}.highlight`),
+              cta: t(`items.${key}.cta`),
+              image: t(`items.${key}.image`),
+            }}
+            direction={index % 2 === 0 ? "left" : "right"}
+          />
+        ))}
       </div>
     </div>
   );
 }
 
 interface PortfolioItemProps {
-  t: TranslationFunction;
+  item: {
+    subtitle: string;
+    title: string;
+    description: string;
+    highlight?: string;
+    cta: string;
+    image: string;
+  };
   direction: "left" | "right";
-  isMain: boolean;
+  isMain?: boolean;
 }
 
-function PortfolioItem({ t, direction, isMain }: PortfolioItemProps) {
+function PortfolioItem({
+  item,
+  direction,
+  isMain = false,
+}: PortfolioItemProps) {
+  console.log(item);
+
   const imageSection = (
     <div className="flex items-center justify-center bg-muted p-6 md:w-1/2 md:p-12">
       <Image
-        src="/ISA-ERP.png"
-        alt="ISA-ERP Logo"
-        width={200}
-        height={200}
-        className="h-auto max-w-full"
+        src={item.image}
+        alt={item.title}
+        width={400}
+        height={300}
+        className="h-auto max-h-[300px] max-w-full rounded-lg object-contain"
       />
     </div>
   );
@@ -186,17 +233,19 @@ function PortfolioItem({ t, direction, isMain }: PortfolioItemProps) {
   const contentSection = (
     <CardContent className="flex flex-col justify-center p-6 md:w-1/2 md:p-12">
       <h3 className="mb-4 text-lg font-semibold uppercase text-muted-foreground">
-        {t("item.subtitle")}
+        {item.subtitle}
       </h3>
-      <h2 className="mb-4 text-3xl font-bold">{t("item.title")}</h2>
+      <h2 className="mb-4 text-3xl font-bold">{item.title}</h2>
       <p className="mb-6 text-muted-foreground">
-        {t("item.description")}
-        <span className="font-semibold text-foreground">
-          {" "}
-          {t("item.highlight")}
-        </span>
+        {item.description}
+        {item.highlight && (
+          <span className="font-semibold text-foreground">
+            {" "}
+            {item.highlight}
+          </span>
+        )}
       </p>
-      <Button className="self-start">{t("item.cta")}</Button>
+      <Button className="self-start">{item.cta}</Button>
     </CardContent>
   );
 
@@ -207,7 +256,9 @@ function PortfolioItem({ t, direction, isMain }: PortfolioItemProps) {
   return (
     <Card className={`overflow-hidden ${mainStyles}`}>
       <div
-        className={`flex flex-col ${direction === "left" ? "md:flex-row" : "md:flex-row-reverse"}`}
+        className={`flex flex-col ${
+          direction === "left" ? "md:flex-row" : "md:flex-row-reverse"
+        }`}
       >
         {imageSection}
         {contentSection}

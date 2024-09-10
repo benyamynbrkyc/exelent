@@ -30,13 +30,56 @@
   },
   "portfolio": {
     "subtitle": "OUR WORK",
-    "title": "Featured Project",
-    "item": {
+    "title": "Featured Projects",
+    "mainItem": {
       "subtitle": "Enterprise Resource Planning",
       "title": "All-In-One Accounting System",
       "description": "Tested on databases where a single file size exceeds 1,000,000,000 records, ISA-ERP is an excellent solution for all businesses - ",
       "highlight": "large and small.",
-      "cta": "Learn More"
+      "cta": "Learn More",
+      "image": "/ISA-ERP.png"
+    },
+    "items": {
+      "accessibility": {
+        "subtitle": "User-Friendly Interface",
+        "title": "Accessibility Features",
+        "description": "Our software is designed with accessibility in mind, ensuring that all users can navigate and use the system efficiently.",
+        "highlight": "Inclusive design for everyone.",
+        "cta": "Explore Features",
+        "image": "/happy-people.png"
+      },
+      "mobileApp": {
+        "subtitle": "On-the-Go Access",
+        "title": "Mobile Application",
+        "description": "Access your business data anytime, anywhere with our robust mobile application, keeping you connected and productive.",
+        "highlight": "Business at your fingertips.",
+        "cta": "Get Mobile",
+        "image": "/isaerp-mobile.png"
+      },
+      "security": {
+        "subtitle": "Data Protection",
+        "title": "Advanced Security Measures",
+        "description": "We prioritize the safety of your data with state-of-the-art security protocols and regular updates to protect against threats.",
+        "highlight": "Your data, our priority.",
+        "cta": "Learn About Security",
+        "image": "/cyber-security.png"
+      },
+      "eBusiness": {
+        "subtitle": "Online Integration",
+        "title": "E-Business Solutions",
+        "description": "Seamlessly integrate your online and offline operations with our comprehensive e-business tools and features.",
+        "highlight": "Bridging digital and physical.",
+        "cta": "Discover E-Business",
+        "image": "/payment.png"
+      },
+      "network": {
+        "subtitle": "Connectivity",
+        "title": "Network Infrastructure",
+        "description": "Our robust network solutions ensure smooth communication and data flow across your entire organization.",
+        "highlight": "Connecting your business.",
+        "cta": "Explore Network Solutions",
+        "image": "/network.png"
+      }
     }
   },
   "emphasis": {
