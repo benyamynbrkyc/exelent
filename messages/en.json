@@ -38,5 +38,8 @@
       "highlight": "large and small.",
       "cta": "Learn More"
     }
+  },
+  "emphasis": {
+    "content": "All modules and all elements are located in one program and are interconnected. Data entered in one module is immediately available in another module, so there is no double data entry."
   }
 }

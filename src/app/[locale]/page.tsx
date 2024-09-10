@@ -8,6 +8,7 @@ import { Globe, PenTool, Database } from "lucide-react";
 import Image from "next/image";
 import { type TranslationFunction } from "@/types/translations";
 import { unstable_setRequestLocale } from "next-intl/server";
+import EmphasizedText from "@/components/emphasis";
 
 type Props = {
   params: { locale: string };
@@ -19,12 +20,15 @@ export default async function Page({ params: { locale } }: Props) {
   const t = await getTranslations("hero");
   const st = await getTranslations("services");
   const pt = await getTranslations("portfolio");
+  const et = await getTranslations("emphasis");
 
   return (
     <>
       <Hero t={t} />
-      <ServiceCards t={st} />
-      <PortfolioShowcase t={pt} />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <ServiceCards t={st} />
+        <PortfolioShowcase />
+      </div>
     </>
   );
 }
@@ -138,7 +142,10 @@ function ServiceCards({ t }: { t: TranslationFunction }) {
   );
 }
 
-function PortfolioShowcase({ t }: { t: TranslationFunction }) {
+async function PortfolioShowcase() {
+  const t = await getTranslations("portfolio");
+  const et = await getTranslations("emphasis");
+
   return (
     <div className="container mx-auto px-4 py-16">
       <h2 className="mb-2 text-center text-sm font-medium uppercase tracking-wide text-muted-foreground">
@@ -148,33 +155,63 @@ function PortfolioShowcase({ t }: { t: TranslationFunction }) {
         {t("title")}
       </h1>
 
-      <Card className="overflow-hidden">
-        <div className="flex flex-col md:flex-row">
-          <div className="flex items-center justify-center bg-muted p-6 md:w-1/2 md:p-12">
-            <Image
-              src="/ISA-ERP.png"
-              alt="ISA-ERP Logo"
-              width={200}
-              height={200}
-              className="h-auto max-w-full"
-            />
-          </div>
-          <CardContent className="flex flex-col justify-center p-6 md:w-1/2 md:p-12">
-            <h3 className="mb-4 text-lg font-semibold uppercase text-muted-foreground">
-              {t("item.subtitle")}
-            </h3>
-            <h2 className="mb-4 text-3xl font-bold">{t("item.title")}</h2>
-            <p className="mb-6 text-muted-foreground">
-              {t("item.description")}
-              <span className="font-semibold text-foreground">
-                {" "}
-                {t("item.highlight")}
-              </span>
-            </p>
-            <Button className="self-start">{t("item.cta")}</Button>
-          </CardContent>
-        </div>
-      </Card>
+      <div className="space-y-20">
+        <PortfolioItem t={t} direction="left" isMain={true} />
+        <EmphasizedText text={et("content")} />
+        <PortfolioItem t={t} direction="right" isMain={false} />
+      </div>
     </div>
+  );
+}
+
+interface PortfolioItemProps {
+  t: TranslationFunction;
+  direction: "left" | "right";
+  isMain: boolean;
+}
+
+function PortfolioItem({ t, direction, isMain }: PortfolioItemProps) {
+  const imageSection = (
+    <div className="flex items-center justify-center bg-muted p-6 md:w-1/2 md:p-12">
+      <Image
+        src="/ISA-ERP.png"
+        alt="ISA-ERP Logo"
+        width={200}
+        height={200}
+        className="h-auto max-w-full"
+      />
+    </div>
+  );
+
+  const contentSection = (
+    <CardContent className="flex flex-col justify-center p-6 md:w-1/2 md:p-12">
+      <h3 className="mb-4 text-lg font-semibold uppercase text-muted-foreground">
+        {t("item.subtitle")}
+      </h3>
+      <h2 className="mb-4 text-3xl font-bold">{t("item.title")}</h2>
+      <p className="mb-6 text-muted-foreground">
+        {t("item.description")}
+        <span className="font-semibold text-foreground">
+          {" "}
+          {t("item.highlight")}
+        </span>
+      </p>
+      <Button className="self-start">{t("item.cta")}</Button>
+    </CardContent>
+  );
+
+  const mainStyles = isMain
+    ? "border-4 border-primary shadow-xl"
+    : "border border-border";
+
+  return (
+    <Card className={`overflow-hidden ${mainStyles}`}>
+      <div
+        className={`flex flex-col ${direction === "left" ? "md:flex-row" : "md:flex-row-reverse"}`}
+      >
+        {imageSection}
+        {contentSection}
+      </div>
+    </Card>
   );
 }
