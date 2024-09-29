@@ -53,7 +53,7 @@ function Hero({ t }: { t: TranslationFunction }) {
             className="mb-4 transition-colors hover:bg-secondary/80"
           >
             <Link
-              href="/erp-solution"
+              href="/erp"
               className="inline-flex items-center text-sm font-semibold"
             >
               {t("discoverErp")}

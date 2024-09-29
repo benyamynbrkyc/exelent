@@ -1,9 +1,7 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Link } from "@/i18n/routing";
 import { TranslationFunction } from "@/types/translations";
 import { getTranslations } from "@/utils/translations";
-import { ArrowRight } from "lucide-react";
+
+import Image from "next/image";
 
 export default async function ERPPage() {
   const t = await getTranslations("hero");
@@ -35,18 +33,6 @@ function Hero({ t }: { t: TranslationFunction }) {
       </div>
       <div className="mx-auto max-w-2xl py-20 sm:py-32 lg:py-40">
         <div className="text-center">
-          <Badge
-            variant="secondary"
-            className="mb-4 transition-colors hover:bg-secondary/80"
-          >
-            <Link
-              href="/erp-solution"
-              className="inline-flex items-center text-sm font-semibold"
-            >
-              {t("discoverErp")}
-              <ArrowRight className="ml-1 h-4 w-4" />
-            </Link>
-          </Badge>
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
             {t("title")}
           </h1>
@@ -54,9 +40,7 @@ function Hero({ t }: { t: TranslationFunction }) {
             {t("description")}
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button asChild size="lg" className="px-8 py-3 text-lg">
-              <Link href="/contact">{t("contactUs")}</Link>
-            </Button>
+            <Image src="/isa-erp.webp" alt="ISA ERP" width={150} height={150} />
           </div>
         </div>
       </div>
