@@ -38,8 +38,10 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Nav />
-            {children}
-            <Footer />
+            <div className="space-y-20">
+              {children}
+              <Footer />
+            </div>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
