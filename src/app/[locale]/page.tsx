@@ -241,7 +241,9 @@ function PortfolioItem({
           </span>
         )}
       </p>
-      <Button className="self-start">{item.cta}</Button>
+      <Button className="self-start" asChild>
+        <Link href={"/isa-erp"}>{item.cta}</Link>
+      </Button>
     </CardContent>
   );
 
