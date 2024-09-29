@@ -84,5 +84,11 @@
   },
   "emphasis": {
     "content": "Svi moduli i svi elementi se nalaze u jednom programu i međusobno su povezani. Podaci uneseni u jednom modulu su odmah i u drugom modulu na raspolaganju, tako da nema duplog unosa podataka."
+  },
+  "footer": {
+    "title": "Kontaktirajte nas",
+    "phone": "+387 61 637 475",
+    "email1": "exelent@bih.net.ba",
+    "email2": "exelent.maglaj@gmail.com"
   }
 }

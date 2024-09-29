@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, Instagram, ExternalLinkIcon } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const footerBlacklist = ["/contact"]; // Add paths where footer shouldn't appear
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const pathname = usePathname();
+  const t = useTranslations("footer");
 
   if (footerBlacklist.includes(pathname)) {
     return null;
@@ -18,28 +20,26 @@ export default function Footer() {
   return (
     <footer className="mx-auto max-w-lg py-8">
       <h1 className="mb-12 text-center text-4xl font-bold text-primary md:text-5xl">
-        {"Contact us"}
+        {t("title")}
       </h1>
       <div className="container mx-auto space-y-8 px-4">
         <div className="space-y-4">
           <Button variant="outline" className="w-full justify-start" asChild>
             <a href="tel:+38761637475">
               <Phone className="mr-2 h-4 w-4" />
-              <span className="w-full text-center">+387 61 637 475</span>
+              <span className="w-full text-center">{t("phone")}</span>
             </a>
           </Button>
           <Button variant="outline" className="w-full justify-start" asChild>
             <a href="mailto:exelent@bih.net.ba">
               <Mail className="mr-2 h-4 w-4" />
-              <span className="w-full text-center">exelent@bih.net.ba</span>
+              <span className="w-full text-center">{t("email1")}</span>
             </a>
           </Button>
           <Button variant="outline" className="w-full justify-start" asChild>
             <a href="mailto:exelent.maglaj@gmail.com">
               <Mail className="mr-2 h-4 w-4" />
-              <span className="w-full text-center">
-                exelent.maglaj@gmail.com
-              </span>
+              <span className="w-full text-center">{t("email2")}</span>
             </a>
           </Button>
         </div>
