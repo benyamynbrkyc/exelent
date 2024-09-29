@@ -42,7 +42,7 @@ function Links({ t }: { t: TranslationFunction }) {
         <Link href="/">{t("home")}</Link>
       </Button>
       <Button asChild variant={"outline"}>
-        <Link href="#">{t("isaErp")}</Link>
+        <Link href="/erp">{t("isaErp")}</Link>
       </Button>
       <Button asChild variant={"outline"}>
         <Link href="#">{t("contact")}</Link>
