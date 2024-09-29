@@ -4,6 +4,7 @@ import { type Metadata } from "next";
 import { Nav } from "./nav";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
+import Footer from "./footer";
 
 export const metadata: Metadata = {
   title: "EXElent d.o.o | Scalable ERP & Custom Development Solutions",
@@ -38,6 +39,7 @@ export default function RootLayout({
           >
             <Nav />
             {children}
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
