@@ -90,5 +90,9 @@
     "phone": "+387 61 637 475",
     "email1": "exelent@bih.net.ba",
     "email2": "exelent.maglaj@gmail.com"
+  },
+  "erpSection": {
+    "title": "Šta je ISA-ERP?",
+    "description": "ISA-ERP programski paket je skup međusobno povezanih programskih modula ili podprograma koji čine kompletni poslovno informacioni sistem."
   }
 }

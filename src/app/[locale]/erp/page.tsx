@@ -5,12 +5,20 @@ import Image from "next/image";
 
 export default async function ERPPage() {
   const t = await getTranslations("hero");
+  const tErp = await getTranslations("erpSection");
 
   return (
     <>
       <Hero t={t} />
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1>ERP</h1>
+      <div className="flex items-center justify-center">
+        <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
+          <h1 className="mb-12 text-4xl font-bold text-primary">
+            {tErp("title")}
+          </h1>
+          <p className="max-w-prose text-lg text-muted-foreground">
+            {tErp("description")}
+          </p>
+        </div>
       </div>
     </>
   );
