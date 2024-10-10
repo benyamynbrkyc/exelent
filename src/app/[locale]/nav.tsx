@@ -10,12 +10,14 @@ export async function Nav() {
 
   return (
     <div className="sticky top-0 isolate z-50 flex items-center justify-between bg-white/20 px-10 py-6 backdrop-blur-md dark:bg-gray-900/20 lg:justify-center lg:gap-44">
-      <Image
-        src="/exelent-maglaj-logo-small.png"
-        alt="EXElent Maglaj Logo"
-        width={100}
-        height={100}
-      />
+      <Link href="/">
+        <Image
+          src="/exelent-maglaj-logo-small.png"
+          alt="EXElent Maglaj Logo"
+          width={100}
+          height={100}
+        />
+      </Link>
       {/* desktop menu */}
       <div className="hidden items-center gap-44 lg:flex">
         <nav className="flex flex-col gap-4 lg:flex-row lg:items-center">
