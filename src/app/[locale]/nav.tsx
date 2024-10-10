@@ -3,13 +3,19 @@ import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { LangSwitcher } from "./lang-switcher";
 import { MobileMenu } from "./mobile-menu";
+import Image from "next/image";
 
 export async function Nav() {
   const t = await getTranslations();
 
   return (
-    <div className="sticky top-0 isolate z-50 flex items-center justify-between bg-white/20 p-10 backdrop-blur-md dark:bg-gray-900/20 lg:justify-center lg:gap-44">
-      <div className="font-bold">Coming Soon</div>
+    <div className="sticky top-0 isolate z-50 flex items-center justify-between bg-white/20 px-10 py-6 backdrop-blur-md dark:bg-gray-900/20 lg:justify-center lg:gap-44">
+      <Image
+        src="/exelent-maglaj-logo-small.png"
+        alt="EXElent Maglaj Logo"
+        width={100}
+        height={100}
+      />
       {/* desktop menu */}
       <div className="hidden items-center gap-44 lg:flex">
         <nav className="flex flex-col gap-4 lg:flex-row lg:items-center">
