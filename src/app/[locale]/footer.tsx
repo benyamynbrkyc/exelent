@@ -1,10 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Instagram, ExternalLinkIcon } from "lucide-react";
 import { Link } from "@/i18n/routing";
-import { usePathname } from "next/navigation";
+import { ExternalLinkIcon, Mail, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const footerBlacklist = ["/contact"]; // Add paths where footer shouldn't appear
 

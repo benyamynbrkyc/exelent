@@ -1,10 +1,10 @@
-import { TranslationFunction } from "@/types/translations";
+import type { TranslationFunction } from "@/types/translations";
 import { getTranslations } from "@/utils/translations";
-import Image from "next/image";
-import { SoftwareFeatures } from "./software-features";
-import { HighlightedQuoteTransparent } from "./highlighted-quote-transparent";
-import { FeatureGrid } from "./feature-grid";
 import { unstable_setRequestLocale } from "next-intl/server";
+import Image from "next/image";
+import { FeatureGrid } from "./feature-grid";
+import { HighlightedQuoteTransparent } from "./highlighted-quote-transparent";
+import { SoftwareFeatures } from "./software-features";
 
 export default async function ERPPage({
   params: { locale },
