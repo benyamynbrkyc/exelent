@@ -2,8 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getTranslations } from "@/utils/translations";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default async function ContactPage() {
+export default async function ContactPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
+
   const t = await getTranslations("contactPage");
 
   return (

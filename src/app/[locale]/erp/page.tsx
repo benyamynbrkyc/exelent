@@ -4,8 +4,15 @@ import Image from "next/image";
 import { SoftwareFeatures } from "./software-features";
 import { HighlightedQuoteTransparent } from "./highlighted-quote-transparent";
 import { FeatureGrid } from "./feature-grid";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default async function ERPPage() {
+export default async function ERPPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
+
   const t = await getTranslations("hero");
   const tErp = await getTranslations("erpSection");
 
