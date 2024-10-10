@@ -9,12 +9,11 @@ import { useTranslations } from "next-intl";
 const footerBlacklist = ["/contact"]; // Add paths where footer shouldn't appear
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
   const pathname = usePathname();
   const t = useTranslations("footer");
 
-  if (footerBlacklist.includes(pathname)) {
-    return null;
+  if (!shouldShow(pathname, footerBlacklist)) {
+    return <Signature />;
   }
 
   return (
@@ -44,21 +43,38 @@ export default function Footer() {
           </Button>
         </div>
 
-        <div className="text-center text-sm text-muted-foreground">
-          <p className="flex items-center justify-center">
-            {currentYear} | Development by{" "}
-            <Link
-              href="https://benjaminbrkic.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1 inline-flex items-center text-pink-500 hover:text-pink-600"
-            >
-              <ExternalLinkIcon className="mr-1 h-4 w-4" />
-              benjaminbrkic.com
-            </Link>
-          </p>
-        </div>
+        <Signature />
       </div>
     </footer>
   );
+}
+
+function Signature() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <div className="text-center text-sm text-muted-foreground">
+      <p className="flex items-center justify-center">
+        {currentYear} | Development by{" "}
+        <Link
+          href="https://benjaminbrkic.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-1 inline-flex items-center text-pink-500 hover:text-pink-600"
+        >
+          <ExternalLinkIcon className="mr-1 h-4 w-4" />
+          benjaminbrkic.com
+        </Link>
+      </p>
+    </div>
+  );
+}
+
+function shouldShow(pathname: string, blacklist: string[]): boolean {
+  for (const blacklistedPath of blacklist) {
+    if (pathname.includes(blacklistedPath)) {
+      return false;
+    }
+  }
+  return true;
 }
