@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getTranslations } from "next-intl/server";
+import type { LucideIcon } from "lucide-react";
 import {
-  LucideIcon,
   InfinityIcon,
   UserCheck,
   Database,
@@ -16,7 +16,7 @@ import {
   BookOpen,
 } from "lucide-react";
 
-const featureIcons: { [key: string]: LucideIcon } = {
+const featureIcons: Record<string, LucideIcon> = {
   InfinityIcon,
   UserCheck,
   Database,
@@ -45,7 +45,7 @@ export async function FeatureGrid() {
       <h2 className="mb-6 text-center text-3xl font-bold">{t("title")}</h2>
       <div className="grid auto-rows-fr grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature, index) => {
-          const IconComponent = featureIcons[feature.icon] || InfinityIcon;
+          const IconComponent = featureIcons[feature.icon] ?? InfinityIcon;
           return (
             <Card key={index} className="flex flex-col">
               <CardHeader>
