@@ -60,7 +60,12 @@ function Hero({ t }: { t: TranslationFunction }) {
             {t("description")}
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Image src="/isa-erp.webp" alt="ISA ERP" width={150} height={150} />
+            <Image
+              src="/isa-erp-logo.webp"
+              alt="ISA ERP"
+              width={150}
+              height={150}
+            />
           </div>
         </div>
       </div>
