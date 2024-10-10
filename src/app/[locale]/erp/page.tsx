@@ -1,7 +1,9 @@
 import { TranslationFunction } from "@/types/translations";
 import { getTranslations } from "@/utils/translations";
-
 import Image from "next/image";
+import { SoftwareFeatures } from "./software-features";
+import { HighlightedQuoteTransparent } from "./highlighted-quote-transparent";
+import { FeatureGrid } from "./feature-grid";
 
 export default async function ERPPage() {
   const t = await getTranslations("hero");
@@ -20,6 +22,9 @@ export default async function ERPPage() {
           </p>
         </div>
       </div>
+      <SoftwareFeatures />
+      <HighlightedQuoteTransparent />
+      <FeatureGrid />
     </>
   );
 }

@@ -94,5 +94,94 @@
   "erpSection": {
     "title": "Šta je ISA-ERP?",
     "description": "ISA-ERP programski paket je skup međusobno povezanih programskih modula ili podprograma koji čine kompletni poslovno informacioni sistem."
+  },
+  "highlightedQuote": {
+    "content": "ISA-ERP je u potpunosti usklađen s pozitivnim zakonskim propisima u Federaciji Bosne i Hercegovine i Republici Srpskoj. Na sve eventualne izmjene i dopune zakonskih propisa se reaguje u najkraćem mogućem roku i programi se odmah usklađuju s eventualnim izmjenama.",
+    "author": "EXElent"
+  },
+  "softwareFeatures": {
+    "title": "ISA-ERP Moduli",
+    "modules": [
+      "Finansijsko knjigovodstvo",
+      "Robno knjigovodstvo - Veleprodaja",
+      "Robno knjigovodstvo - Maloprodaja",
+      "POS Kasa",
+      "Materijalno knjigovodstvo",
+      "Proizvodnja na bazi normativa",
+      "Fakturisanje usluga",
+      "Blagajna",
+      "Plate",
+      "Kadrovska evidencija",
+      "Stalna sredstva",
+      "Putni nalozi",
+      "Virmani",
+      "Finansijske knjižne obavijesti",
+      "KUF, KIF i PDV"
+    ]
+  },
+  "generalFeatures": {
+    "title": "Opšte Karakteristike",
+    "items": [
+      {
+        "title": "All-In-One Sistem",
+        "description": "Svi moduli i svi elementi se nalaze u jednom programu i međusobno su povezani. Podaci uneseni u jednom modulu su odmah i u drugom modulu na raspolaganju, tako da nema duplog unosa podataka.",
+        "icon": "InfinityIcon"
+      },
+      {
+        "title": "Jednostavnost Korištenja",
+        "description": "Korisnički interfejs (GUI) osmišljen je da omogući korisniku da na jednostavan način evidentira, obradi i izvjesti o svim poslovnim promjenama.",
+        "icon": "UserCheck"
+      },
+      {
+        "title": "Centralizovana Baza Podataka",
+        "description": "Svi korisnici sistema pristupaju jednoj bazi podataka čime se smanjuje mogućnost duplikacije podataka, netačnih podataka ili neusklađenosti podataka.",
+        "icon": "Database"
+      },
+      {
+        "title": "Automatska Zaštita Podataka",
+        "description": "Za sigurnost, integritet i arhiviranje podataka brine se sistem za upravljanje bazama podataka. Vaši podaci su uvijek sigurni i na mjestu.",
+        "icon": "Lock"
+      },
+      {
+        "title": "Nadogradnja Programa",
+        "description": "Praćenjem globalnih tehnoloških trendova u mogućnosti smo da u vrlo kratkom vremenskom roku i bez ograničenja mijenjamo i nadograđujemo postojeći informacioni sistem.",
+        "icon": "RefreshCw"
+      },
+      {
+        "title": "Korisnička Prava",
+        "description": "U zavisnosti od pozicije u preduzeću, svakom korisniku je moguće dodijeliti određen nivo ovlaštenja i pristupa programu i podataka koje može vidjeti/mijenjati.",
+        "icon": "UserCog"
+      },
+      {
+        "title": "Elektronsko Poslovanje",
+        "description": "Omogućena je komunikacija sa programima svih banaka radi jednostavnijeg importa platnih naloga u program banke.",
+        "icon": "Network"
+      },
+      {
+        "title": "Uvoz - Izvoz Podataka",
+        "description": "Mogućnost uvoza podataka iz različitih formata: Txt, Excel, XML, DBF i ostale. Slanje dokumenata putem e-pošte direktno iz programa, izvoz dokumenata u Word, Excel, HTML, XML, PDF i druge formate dokumenata.",
+        "icon": "File"
+      },
+      {
+        "title": "Mobilna Aplikacija",
+        "description": "ISA-ERP je u potpunosti prilagođen vašem mobilnom uređaju tako da možete u svakom momentu, na svakoj lokaciji da pristupite vašim podacima. U svakom momentu imate pristup bazi podataka.",
+        "icon": "Smartphone"
+      },
+      {
+        "title": "Rad u mreži, lokalna i udaljena",
+        "description": "Neograničen broj istovremenih korisnika koji pristupaju istoj bazi podataka iz bilo kog modula.",
+        "icon": "Network"
+      },
+      {
+        "title": "Fiskalizacija i izvještaji",
+        "description": "ISA-ERP radi sa svim fiskalnim uređajima koji su prisutni na tržištu BiH. ISA-ERP nudi više od 300 različitih izvještaja po raznim kriterijima uz kontinuirano kreiranje novih u zavisnosti od potreba, ideja i zahtjeva.",
+        "icon": "Receipt"
+      },
+      {
+        "title": "Knjigovodstvo",
+        "description": "Potpuna integracija pomoćnih knjigovodstava sa glavnom knjigom (Podatak unesen na jednom mjestu koriste svi programski moduli). ISA-ERP radi sa svim fiskalnim uređajima koji su prisutni na tržištu BiH.",
+        "icon": "BookOpen"
+      }
+    ]
   }
 }
