@@ -12,7 +12,7 @@ export default async function ERPPage() {
   return (
     <>
       <Hero t={t} />
-      <div className="flex items-center justify-center">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
           <h1 className="mb-12 text-4xl font-bold text-primary">
             {tErp("title")}
@@ -21,10 +21,10 @@ export default async function ERPPage() {
             {tErp("description")}
           </p>
         </div>
+        <SoftwareFeatures />
+        <HighlightedQuoteTransparent />
+        <FeatureGrid />
       </div>
-      <SoftwareFeatures />
-      <HighlightedQuoteTransparent />
-      <FeatureGrid />
     </>
   );
 }
